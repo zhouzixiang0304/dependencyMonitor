@@ -84,11 +84,13 @@
     /*d3.layout.force 基于物理模拟的位置连接，force.charge 获取或设置节点电荷数（表示吸引或排斥），
      linkDistance 获取或设置节点间连接线的距离， size获取宽和高*/
     var force = d3.layout.force()
-        .charge(-2000).linkDistance(300).size([w, h]);
+        .charge(-2000).linkDistance(Math.min(w,h)/3).size([w, h]);
     /**/
     var min_zoom = 0.2;
     var max_zoom = 7;
     var svg = d3.select("#graph").append("svg")
+        .attr('width',w)
+        .attr('height',h)
         .attr("pointer-events", "all");
     var zoom = d3.behavior.zoom().scaleExtent([min_zoom,max_zoom]);
     var g = svg.append("g");
@@ -98,7 +100,7 @@
         .attr("id", "arrowhead")
         .attr("markerUnits", "userSpaceOnUse")
         .attr("viewBox", "0 -5 10 10")//坐标系的区域
-        .attr("refX", 26)//箭头坐标
+        .attr("refX", 24)//箭头坐标
         .attr("refY", 0)
         .attr("markerWidth", 12)//标识的大小
         .attr("markerHeight", 12)
@@ -106,7 +108,7 @@
         .attr("stroke-width", 2)//箭头宽度
         .append("path")
         .attr("d", "M0,-5L10,0L0,5")//箭头的路径
-        .attr('fill', '#219bed');//箭头颜色
+        .attr('fill', '#6c6c6c');//箭头颜色
 
     d3.json("/server/graph", function (error, graph) {
         if (error) return;
@@ -123,7 +125,7 @@
         var link = g.selectAll(".link")
             .data(graph.links).enter()
             .append("line")
-            .style("stroke", "#0fb5cc")
+            .style("stroke", "#818181")
             .style("stroke-width", 0.5)
             .style("pointer-events", "none")
             .attr("class", "link")
@@ -134,18 +136,19 @@
             .append("g")
             .attr("class", "layer nodes");
         var node = gNode.append("circle")
-            .style("fill", "#e0150b")
-            .style('stroke', '#f9fb8c')
-            .attr("r", 20)
+            .style("fill", "#c02b11")
+            .style('stroke', '#ffffff')
+            .style('stroke-width','4')
+            .attr("r", 15)
             .call(force.drag);
 
         //节点文字
         var text = g.selectAll(".text").data(graph.nodes).enter().append("text")
-            .attr("dy", ".35em").style('fill', '#2d609c').style('font-size', '12px')
+            .attr("dx","-1.3em").attr("dy", "2.5em").style('fill', '#a5a5a5').style('font-size', '12px')
             .style('text-shadow', '0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff')
             .text(function (d) {
                 return d.serverName;
-            })
+            });
 
         //set events
         node.on("mousedown",function(d){
@@ -206,7 +209,7 @@
                 })
                 .attr("y2", function (d) {
                     return d.target.y;
-                })
+                });
             node.attr("cx", dx)
                 .attr("cy", dy);
 //            var translate = "translate("+dx+" "+dy+")";
