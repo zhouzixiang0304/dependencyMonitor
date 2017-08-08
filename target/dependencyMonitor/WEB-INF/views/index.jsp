@@ -27,10 +27,7 @@
 
 </head>
 
-
 <body>
-
-
 <!-- 侧边栏 -->
 <aside id="detailsArea">
     <div id="collapse">
@@ -73,6 +70,8 @@
         $(this).css("display","none");
     });
 
+    var notes = d3.select('#MsgList');
+
     var optArray = []; //PLACE HOLDER FOR SEARCH NAMES
     var w = window.innerWidth;
     var h = window.innerHeight;
@@ -83,8 +82,8 @@
     var highlight_trans = 0.1;
     /*d3.layout.force 基于物理模拟的位置连接，force.charge 获取或设置节点电荷数（表示吸引或排斥），
      linkDistance 获取或设置节点间连接线的距离， size获取宽和高*/
-    var force = d3.layout.force()
-        .charge(-2000).linkDistance(Math.min(w,h)/3).size([w, h]);
+    var force = d3.layout.force().size([w, h])
+        .charge(-2000).linkDistance(Math.min(w,h)/3);
     /**/
     var min_zoom = 0.2;
     var max_zoom = 7;
@@ -151,12 +150,29 @@
             });
 
         //set events
+        //
         node.on("mousedown",function(d){
             d3.event.stopPropagation(); //解决拖动SVG时不能拖动节点
             focus_node = d;
             set_focus(d);
             if(highlight_node === null) set_highlight(d)
         });
+        //double click nodes open sidebar
+        node.on("dblclick",function (d) {
+            $("#detailsArea").animate({width:'280px'});
+            $("#collapse").css("display","block");
+            $("#seaBox").css("display","block");
+            $("#colOpen").css("display","none");
+
+            // Delete the current notes section for new notes
+            notes.selectAll('*').remove();
+
+            var list = notes.append('ul');
+                list.append('li')
+                    .text(d.connections);
+            notes.transition().style({'opacity':1});
+        });
+
 
         //鼠标操作效果
         //TODO
