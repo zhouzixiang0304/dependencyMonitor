@@ -777,3 +777,35 @@ Storage files: (filename : modification date - size)
 2017-08-07 01:54:30.520+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
 2017-08-07 01:54:31.723+0000 INFO [o.n.k.i.DiagnosticsManager] --- SERVER STARTED START ---
 2017-08-07 01:54:32.836+0000 INFO [o.n.k.i.DiagnosticsManager] --- SERVER STARTED END ---
+2017-08-07 08:35:35.447+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Book(bookId) [provider: {key=lucene, version=1.0}]]
+2017-08-07 08:35:35.484+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@467a472e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-08-07 08:35:35.484+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@467a472e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-08-07 08:35:35.500+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Book(bookId) [provider: {key=lucene, version=1.0}]]
+2017-08-07 08:35:35.585+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:ServerFunc(serverFuncId) [provider: {key=lucene, version=1.0}]]
+2017-08-07 08:35:35.600+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@3902b31f[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-08-07 08:35:35.600+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@3902b31f[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-08-07 08:35:35.600+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:ServerFunc(serverFuncId) [provider: {key=lucene, version=1.0}]]
+2017-08-07 08:35:35.663+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:User(userId) [provider: {key=lucene, version=1.0}]]
+2017-08-07 08:35:35.663+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@102fd3fb[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-08-07 08:35:35.663+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@102fd3fb[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-08-07 08:35:35.684+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:User(userId) [provider: {key=lucene, version=1.0}]]
+2017-08-07 08:35:39.234+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [178]:  Starting check pointing...
+2017-08-07 08:35:39.234+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [178]:  Starting store flush...
+2017-08-07 08:35:39.303+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 178 to [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.b], from [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.a].
+2017-08-07 08:35:39.303+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 178 to [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.b], from [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.a].
+2017-08-07 08:35:39.319+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [178]:  Store flush completed
+2017-08-07 08:35:39.319+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [178]:  Starting appending check point entry into the tx log...
+2017-08-07 08:35:39.319+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [178]:  Appending check point entry into the tx log completed
+2017-08-07 08:35:39.319+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [178]:  Check pointing completed
+2017-08-07 08:35:39.335+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-08-07 08:35:39.335+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-08-07 11:09:11.258+0000 INFO [o.n.k.i.f.GraphDatabaseFacadeFactory] Shutdown started
+2017-08-07 11:09:11.273+0000 INFO [o.n.k.i.f.GraphDatabaseFacadeFactory] Database is now unavailable
+2017-08-07 11:09:11.528+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by database shutdown [178]:  Starting check pointing...
+2017-08-07 11:09:11.528+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by database shutdown [178]:  Starting store flush...

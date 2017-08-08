@@ -39,5 +39,5 @@ public interface ServerService {
      * @param limit
      * @return
      */
-    Map<String,Object> graph(int limit);
+    Map<String,Object> graph();
 }
