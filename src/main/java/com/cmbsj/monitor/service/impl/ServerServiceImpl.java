@@ -44,7 +44,7 @@ public class ServerServiceImpl implements ServerService {
     }
 
     @Override
-    public Map<String, Object> graph(int limit) {
+    public Map<String, Object> graph() {
         return toD3Format.toD3FormatAgain(getAllServer());
     }
 }
