@@ -80,7 +80,7 @@ public class ToD3Format<T> {
      * @param value2
      * @return
      */
-    public Map<String,Object> map(String key1, Object value1, String key2, Object value2){
+    private Map<String,Object> map(String key1, Object value1, String key2, Object value2){
         Map<String,Object> result = new HashMap<>(2);
         result.put(key1,value1);
         result.put(key2,value2);
@@ -107,7 +107,7 @@ public class ToD3Format<T> {
      * @param nodes 包含User的node的list，包含userId属性
      * @return 返回找到的位置，或-1
      */
-    public int getIndex(T t,List<Map<String,Object>> nodes ) throws IllegalAccessException{
+    private int getIndex(T t,List<Map<String,Object>> nodes ) throws IllegalAccessException{
         Class clazz = t.getClass();
         Field[] fields = clazz.getDeclaredFields();
         for (int i = 0; i < nodes.size(); i++){

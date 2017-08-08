@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dependencyMornitor:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="dependencyMonitor.war">
+      <element id="artifact" artifact-name="dependencyMornitor:war exploded" />
+    </root>
+  </artifact>
+</component>
