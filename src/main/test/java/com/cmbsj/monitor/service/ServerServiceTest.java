@@ -7,16 +7,9 @@ import com.cmbsj.monitor.util.SerConAdapter;
 import com.cmbsj.monitor.util.SerConTarget;
 import com.cmbsj.monitor.util.ToD3Format;
 import org.easymock.*;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
 import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
-import org.mockito.verification.VerificationMode;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -30,9 +23,7 @@ import static org.easymock.EasyMock.*;
 /**
  * Created by lsy on 2017/7/11.
  */
-//@RunWith(SpringJUnit4ClassRunner.class)
 @RunWith(EasyMockRunner.class)
-//@ContextConfiguration(locations = { "/spring/application-context.xml" })
 public class ServerServiceTest extends EasyMockSupport {
 
     @Mock
@@ -86,7 +77,7 @@ public class ServerServiceTest extends EasyMockSupport {
         List<Server> list = new ArrayList<>();
         expect(toD3FormatMock.toD3FormatAgain(null)).andReturn(new HashMap());
         replay(toD3FormatMock);
-        Map<String, Object> graph = serverService.graph(100);
+        Map<String, Object> graph = serverService.graph();
         assertEquals(0,graph.size());
         EasyMock.verify(toD3FormatMock);
     }

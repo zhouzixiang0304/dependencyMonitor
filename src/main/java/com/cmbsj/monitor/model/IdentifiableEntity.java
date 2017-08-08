@@ -13,13 +13,4 @@ public abstract class IdentifiableEntity {
         return graphId;
     }
 
-    @Override
-    public boolean equals( Object obj ) {
-        return obj instanceof IdentifiableEntity && graphId.equals( ((IdentifiableEntity) obj).getGraphId() );
-    }
-
-    @Override
-    public int hashCode() {
-        return 0;
-    }
 }

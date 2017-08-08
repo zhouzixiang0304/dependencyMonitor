@@ -26,7 +26,7 @@ public class ServerController {
 
     @ResponseBody
     @RequestMapping(value = "/graph",method = RequestMethod.GET,produces="application/json")
-    public Map<String,Object> graph(@RequestParam(value = "limit",required = false) Integer limit){
-        return serverService.graph(limit == null ? 100 : limit);
+    public Map<String,Object> graph(){
+        return serverService.graph();
     }
 }
