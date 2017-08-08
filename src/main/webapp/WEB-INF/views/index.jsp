@@ -70,7 +70,7 @@
         $(this).css("display","none");
     });
 
-    var details = d3.select('MsgList');
+    var notes = d3.select('#MsgList');
 
     var optArray = []; //PLACE HOLDER FOR SEARCH NAMES
     var w = window.innerWidth;
@@ -158,11 +158,16 @@
             if(highlight_node === null) set_highlight(d)
         });
         //double click nodes open sidebar
-        node.on("dblclick",function () {
+        node.on("dblclick",function (d) {
             $("#detailsArea").animate({width:'280px'});
             $("#collapse").css("display","block");
             $("#seaBox").css("display","block");
             $("#colOpen").css("display","none");
+
+            var list = notes.append('ul');
+                list.append('li')
+                    .text(d.connections);
+            notes.transition().style({'opacity':1});
         });
 
 
