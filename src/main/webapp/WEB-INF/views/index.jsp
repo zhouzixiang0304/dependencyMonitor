@@ -164,6 +164,9 @@
             $("#seaBox").css("display","block");
             $("#colOpen").css("display","none");
 
+            // Delete the current notes section for new notes
+            notes.selectAll('*').remove();
+
             var list = notes.append('ul');
                 list.append('li')
                     .text(d.connections);
