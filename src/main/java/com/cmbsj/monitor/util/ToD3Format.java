@@ -35,7 +35,7 @@ public class ToD3Format<T> {
                 Field[] fields = clazz.getDeclaredFields();
                 Map<String, Object> map = new HashMap<>();
                 for (Field f : fields) {
-                    if (!f.isAnnotationPresent(RelatedTo.class)) {
+                    if (!f.isAnnotationPresent(RelatedTo.class) && !Collection.class.isAssignableFrom(f.getType())) {
                         f.setAccessible(true);
                         f.get(c);
                         map.put(f.getName(), f.get(c));
