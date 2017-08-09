@@ -50,17 +50,6 @@ public class ServerConnection {
         this.description = description;
     }
 
-    @Override
-    public String toString() {
-        return "ServerConnection{" +
-                "sourceClass='" + sourceClass + '\'' +
-                ", sourceFunc='" + sourceFunc + '\'' +
-                ", targetClass='" + targetClass + '\'' +
-                ", targetFunc='" + targetFunc + '\'' +
-                ", description='" + description + '\'' +
-                '}';
-    }
-
     public ServerConnection() {
     }
     public ServerConnection(String sourceClass) {

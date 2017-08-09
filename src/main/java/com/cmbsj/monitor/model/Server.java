@@ -24,8 +24,14 @@ public class Server extends IdentifiableEntity {
     @Indexed(indexType = IndexType.FULLTEXT, indexName = "serverName")
     private String serverName;
 
+    /**
+     * connections中存入一个长度为3的String数组
+     * String[0] : description
+     * String[1] : SourceServer and Function
+     * String[2] : TargetServer and Function
+     */
     @Indexed
-    private List<String> connections = new ArrayList<>();
+    private List<String[]> connections = new ArrayList<>();
 
     @Indexed
     private Set<Func> funcs = new HashSet<>();
@@ -66,11 +72,11 @@ public class Server extends IdentifiableEntity {
         this.funcs = funcs;
     }
 
-    public List<String> getConnections() {
+    public List<String[]> getConnections() {
         return connections;
     }
 
-    public void setConnections(List<String> connections) {
+    public void setConnections(List<String[]> connections) {
         this.connections = connections;
     }
 

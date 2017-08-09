@@ -1,13 +1,13 @@
 package com.cmbsj.monitor.controller;
 
+import com.cmbsj.monitor.model.Server;
+import com.cmbsj.monitor.myException.repository.ServerNameNotFoundException;
 import com.cmbsj.monitor.service.ServerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -26,7 +26,13 @@ public class ServerController {
 
     @ResponseBody
     @RequestMapping(value = "/graph",method = RequestMethod.GET,produces="application/json")
-    public Map<String,Object> graph(@RequestParam(value = "limit",required = false) Integer limit){
-        return serverService.graph(limit == null ? 100 : limit);
+    public Map<String,Object> graph(){
+        return serverService.graph();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/getInvocations/{serverName}",method = RequestMethod.GET,produces = "application/json")
+    public Map<String,List<String>> getInvocations(@PathVariable String serverName) throws ServerNameNotFoundException{
+        return serverService.getWhoInvokeMeAndMyTargets(serverName);
     }
 }
