@@ -43,19 +43,6 @@ public class ServerControllerTest {
         verify(serverService);
     }
 
-//    @Test
-//    public void getInvocationsExceptionTest() throws ServerNameNotFoundException{
-//        expect(serverService.getWhoInvokeMeAndMyTargets("class7")).andThrow(new ServerNameNotFoundException());
-//        replay(serverService);
-//        try {
-//            serverController.getInvocations("class7");
-//        }catch (ServerNameNotFoundException e){
-//            assertEquals("未找到相关服务，请重新确认服务名称",e.getMsg());
-//        }finally {
-//            verify(serverService);
-//        }
-//    }
-
     @Test
     public void getInvocationsTest() throws ServerNameNotFoundException{
         expect(serverService.getWhoInvokeMeAndMyTargets("class1")).andReturn(new HashMap<String, List<String>>());

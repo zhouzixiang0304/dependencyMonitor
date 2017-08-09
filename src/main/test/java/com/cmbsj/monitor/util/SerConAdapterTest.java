@@ -85,6 +85,14 @@ public class SerConAdapterTest {
         verify(serverRepository);
     }
 
+    @Test
+    public void getNodeByNameTest(){
+        expect(serverRepository.getServerByName(".*class1.*")).andReturn(new ArrayList<Server>());
+        replay(serverRepository);
+        assertEquals(0,serConAdapter.getNodeByName("class1").size());
+        verify(serverRepository);
+    }
+
     private Collection<Server> testData() throws Exception{
         List<ServerConnection> list = new ArrayList<>();
         list.add(new ServerConnection("class1","func1","class2","func1","test1"));

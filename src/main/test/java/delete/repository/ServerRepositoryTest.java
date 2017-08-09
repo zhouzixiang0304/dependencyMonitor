@@ -1,17 +1,15 @@
-package com.cmbsj.monitor.repository;
+package delete.repository;
 
 import com.cmbsj.monitor.model.Server;
+import com.cmbsj.monitor.repository.ServerRepository;
 import com.cmbsj.monitor.util.SerConTarget;
 import com.cmbsj.monitor.util.ToD3Format;
-import com.sun.xml.internal.ws.transport.http.server.ServerAdapter;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.neo4j.conversion.EndResult;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 
