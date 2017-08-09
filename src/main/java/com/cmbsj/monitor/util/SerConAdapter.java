@@ -50,6 +50,16 @@ public class SerConAdapter implements SerConTarget {
         serverRepository.deleteAll();
     }
 
+    @Override
+    public Set<Server> getWhoInvokeMe(String myName) {
+        return serverRepository.getWhoInvokeMe(".*"+myName+".*");
+    }
+
+    @Override
+    public List<Server> getNodeByName(String serverName) {
+        return serverRepository.getServerByName(".*"+serverName+".*");
+    }
+
     /**
      * 将查找到的服务连接构建为Node
      * @return
@@ -71,11 +81,11 @@ public class SerConAdapter implements SerConTarget {
             String funcTgtName = serverConnection.getTargetClass()+ ":" + serverConnection.getTargetFunc();
             serverSrc.getFuncs().add(new Func(funcSrcName));
             serverTgt.getFuncs().add(new Func(funcTgtName));
-            serverSrc.getConnections().add(serverConnection.getDescription() + " : "
-                    + funcSrcName
-                    + "->"
-                    + funcTgtName
-            );
+            String[] connection = new String[3];
+            connection[0] = serverConnection.getDescription();
+            connection[1] = funcSrcName;
+            connection[2] = funcTgtName;
+            serverSrc.getConnections().add(connection);
             //将target节点存到source的Set中
             if(serverMap.containsKey(serverSrc))//表示Map中已存在source节点
                 serverMap.get(serverSrc).add(serverTgt);

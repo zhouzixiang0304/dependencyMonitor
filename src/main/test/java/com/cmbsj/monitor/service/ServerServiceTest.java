@@ -1,6 +1,7 @@
 package com.cmbsj.monitor.service;
 
 import com.cmbsj.monitor.model.Server;
+import com.cmbsj.monitor.myException.repository.ServerNameNotFoundException;
 import com.cmbsj.monitor.mybatis.entity.ServerConnection;
 import com.cmbsj.monitor.service.impl.ServerServiceImpl;
 import com.cmbsj.monitor.util.SerConAdapter;
@@ -12,10 +13,7 @@ import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 
 import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static junit.framework.Assert.assertEquals;
 import static org.easymock.EasyMock.*;
@@ -80,5 +78,14 @@ public class ServerServiceTest extends EasyMockSupport {
         Map<String, Object> graph = serverService.graph();
         assertEquals(0,graph.size());
         EasyMock.verify(toD3FormatMock);
+    }
+
+    @Test
+    public void getWhoInvokeMeAndMyTargetsTest() throws ServerNameNotFoundException{
+//        expect(serConAdapter.getWhoInvokeMe("class1")).andReturn(new HashSet<Server>());
+//        replay(serConAdapter);
+//        Map<String, List<String>> class1 = serverController.getInvocations("class1");
+//        assertEquals(0,class1.size());
+//        verify(serverService);
     }
 }

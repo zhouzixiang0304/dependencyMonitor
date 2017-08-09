@@ -2,6 +2,7 @@ package com.cmbsj.monitor.service;
 
 
 import com.cmbsj.monitor.model.Server;
+import com.cmbsj.monitor.myException.repository.ServerNameNotFoundException;
 import com.cmbsj.monitor.mybatis.entity.ServerConnection;
 
 import java.util.Collection;
@@ -36,8 +37,9 @@ public interface ServerService {
 
     /**
      * 查找用户并以图形式返回
-     * @param limit
      * @return
      */
     Map<String,Object> graph();
+
+    Map<String,List<String>> getWhoInvokeMeAndMyTargets(String serverName) throws ServerNameNotFoundException;
 }
