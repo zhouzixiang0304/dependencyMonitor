@@ -79,12 +79,14 @@
     var focus_node = null;
     var highlight_node = null;
 
+    var highlight_color = "#569edc";
     var highlight_trans = 0.1;
     /*d3.layout.force 基于物理模拟的位置连接，force.charge 获取或设置节点电荷数（表示吸引或排斥），
      linkDistance 获取或设置节点间连接线的距离， size获取宽和高*/
     var force = d3.layout.force().size([w, h])
         .charge(-2000).linkDistance(Math.min(w,h)/3);
-    /**/
+
+    var default_link_color = "#cbcbcb";
     var min_zoom = 0.2;
     var max_zoom = 7;
     var svg = d3.select("#graph").append("svg")
@@ -112,6 +114,14 @@
     d3.json("/server/graph", function (error, graph) {
         if (error) return;
 
+        var linkedByIndex = {};
+        graph.links.forEach(function(d){
+            linkedByIndex[d.source + "," + d.target] = true;
+        });
+        function isConnected(a,b) {
+            return linkedByIndex[a.index + ","+ b.index] || linkedByIndex[b.index +","+ a.index]
+            || a.index == b.index;
+        }
         //COLLECT ALL THE NODE NAMES FOR SEARCH AUTO-COMPLETE
         for (var i = 0; i < graph.nodes.length; i++) {
             optArray.push(graph.nodes[i].serverName);
@@ -124,7 +134,7 @@
         var link = g.selectAll(".link")
             .data(graph.links).enter()
             .append("line")
-            .style("stroke", "#818181")
+            .style("stroke",default_link_color)
             .style("stroke-width", 0.5)
             .style("pointer-events", "none")
             .attr("class", "link")
@@ -150,15 +160,21 @@
             });
 
         //set events
-        //
-        node.on("mousedown",function(d){
+        node
+            .on("mouseover",function (d) {
+                set_highlight(d);
+            })
+            .on("mousedown",function(d){
             d3.event.stopPropagation(); //解决拖动SVG时不能拖动节点
             focus_node = d;
             set_focus(d);
             if(highlight_node === null) set_highlight(d)
-        });
+        })
+            .on("mouseout",function (d) {
+                exit_highlight();
+            })
         //double click nodes open sidebar
-        node.on("dblclick",function (d) {
+            .on("dblclick",function (d) {
             $("#detailsArea").animate({width:'280px'});
             $("#collapse").css("display","block");
             $("#seaBox").css("display","block");
@@ -166,19 +182,80 @@
 
             // Delete the current notes section for new notes
             notes.selectAll('*').remove();
-
-            var list = notes.append('ul');
-                list.append('li')
+            notes.append('h5').text(d.serverName);
+            var listFather = notes.append('ul');
+                listFather.append('li')
                     .text(d.connections);
+            var listSon = notes.append('ul');
+                listSon.append('li')
+                    .text(d.serverName);
             notes.transition().style({'opacity':1});
+
+             d3.event.stopPropagation(); //解决拖动SVG时不能拖动节点
+             focus_node = d;
+             set_focus(d);
+             if(highlight_node === null) set_highlight(d)
         });
 
+        d3.select(window).on("mouseup",function () {
+            if (focus_node!==null){
+                focus_node = null;
+                if (highlight_trans<1){
+                    node.style("opacity",1);
+                    text.style("opacity",1);
+                    link.style("opacity",1);
+                }
+            }
+            if(highlight_node === null) exit_highlight();
+        }).on("dblclick",function () {
+                if (focus_node!==null){
+                    focus_node = null;
+                    if (highlight_trans<1){
+                        node.style("opacity",1);
+                        text.style("opacity",1);
+                        link.style("opacity",1);
+                    }
+                }
+                if(highlight_node === null) exit_highlight();
+            })
 
-        //鼠标操作效果
-        //TODO
-        function set_focus(d) {
-            if (highlight_trans <1){
+        // mouse down on one of circles
+        function set_focus(d){
+            if (highlight_trans<1){
+                node.style("opacity",function (o) {
+                    return isConnected(d,o) ? 1:2 * highlight_trans;
+                });
+                text.style("opacity",function (o) {
+                    return isConnected(d,o) ? 1: highlight_trans;
+                });
+                link.style("opacity",function (o) {
+                    return o.source.index == d.index || o.target.index == d.index ?1:highlight_trans;
+                });
+            }
+        }
 
+        function  set_highlight(d) {
+            if (focus_node!==null) d = focus_node;
+            highlight_node = d;
+
+            if(highlight_color!="white"){
+                text.style("font-weight",function (o) {
+                    return isConnected(d,o)? "bold":"normal";
+                });
+                link.style("stroke",function(o){
+                    return o.source.index == d.index || o.target.index == d.index ?
+                        highlight_color:default_link_color;
+                });
+            }
+        }
+
+        function exit_highlight() {
+            highlight_node = null;
+            if (focus_node===null){
+                if(highlight_color!="white"){
+                    text.style("font-weight","normal");
+                    link.style("stroke",default_link_color);
+                }
             }
         }
 
@@ -256,6 +333,13 @@
             .transition()
             .duration(5000)
             .style("opacity", 1);
+        // Delete the current notes section for new notes
+        notes.selectAll('*').remove();
+
+        var list = notes.append('ul');
+        list.append('li')
+            .text(d.serverName);
+        notes.transition().style({'opacity':1});
     }
 </script>
 </body>
