@@ -4,6 +4,7 @@ import com.cmbsj.monitor.model.Server;
 import com.cmbsj.monitor.mybatis.entity.ServerConnection;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by lsy on 2017/8/3.
@@ -32,4 +33,18 @@ public interface SerConTarget {
      * 从neo中删除所有服务节点
      */
     void deleteAllNodes();
+
+    /**
+     * 得到调用此节点的父节点
+     * @param myName
+     * @return
+     */
+    Set<Server> getWhoInvokeMe(String myName);
+
+    /**
+     * 根据姓名模糊查询
+     * @param serverName
+     * @return
+     */
+    List<Server> getNodeByName(String serverName);
 }

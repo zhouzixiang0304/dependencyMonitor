@@ -2,6 +2,7 @@ package com.cmbsj.monitor.service.impl;
 
 import com.cmbsj.monitor.model.Func;
 import com.cmbsj.monitor.model.Server;
+import com.cmbsj.monitor.myException.repository.ServerNameNotFoundException;
 import com.cmbsj.monitor.mybatis.dao.SerConMapper;
 import com.cmbsj.monitor.mybatis.entity.ServerConnection;
 import com.cmbsj.monitor.repository.ServerRepository;
@@ -46,5 +47,38 @@ public class ServerServiceImpl implements ServerService {
     @Override
     public Map<String, Object> graph() {
         return toD3Format.toD3FormatAgain(getAllServer());
+    }
+
+    @Override
+    public Map<String,List<String>> getWhoInvokeMeAndMyTargets(String serverName) throws ServerNameNotFoundException{
+        Map<String,List<String>> map = new HashMap<>(2);
+        List<String> fatherInvocations = new ArrayList<>();
+        List<String> sonInvocations = new ArrayList<>();
+        //TODO:找父调用关系
+        Set<Server> fatherServers = serConAdapter.getWhoInvokeMe(serverName);
+        for (Server fatherServer : fatherServers) {
+            List<String[]> connections = fatherServer.getConnections();
+            for (String[] connection : connections) {
+                if(connection[2].contains(serverName)){
+                    String invocation = connection[0] + " : " + connection[1] + "->" + connection[2];
+                    fatherInvocations.add(invocation);
+                }
+            }
+        }
+        //TODO:END
+        //TODO:找子调用关系
+        List<Server> servers = serConAdapter.getNodeByName(serverName);
+        Server server;
+        if(servers.size()==0) throw new ServerNameNotFoundException();
+        server = servers.get(0);
+        List<String[]> connections = server.getConnections();
+        for (String[] connection : connections) {
+            String invocation = connection[0] + " : " + connection[1] + "->" + connection[2];
+            sonInvocations.add(invocation);
+        }
+        //TODO:END
+        map.put("fatherInvocations",fatherInvocations);
+        map.put("sonInvocations",sonInvocations);
+        return map;
     }
 }

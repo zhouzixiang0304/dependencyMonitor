@@ -15,9 +15,7 @@ import org.springframework.data.neo4j.conversion.EndResult;
 import org.springframework.data.neo4j.conversion.QueryResultBuilder;
 
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 import static junit.framework.Assert.assertEquals;
 import static org.easymock.EasyMock.expect;
@@ -76,6 +74,22 @@ public class SerConAdapterTest {
         EasyMock.expectLastCall();
         EasyMock.replay(serverRepository);
         serConAdapter.deleteAllNodes();
+        verify(serverRepository);
+    }
+
+    @Test
+    public void getWhoInvokeMeTest(){
+        expect(serverRepository.getWhoInvokeMe(".*class2.*")).andReturn(new HashSet<Server>());
+        replay(serverRepository);
+        assertEquals(0,serConAdapter.getWhoInvokeMe("class2").size());
+        verify(serverRepository);
+    }
+
+    @Test
+    public void getNodeByNameTest(){
+        expect(serverRepository.getServerByName(".*class1.*")).andReturn(new ArrayList<Server>());
+        replay(serverRepository);
+        assertEquals(0,serConAdapter.getNodeByName("class1").size());
         verify(serverRepository);
     }
 
