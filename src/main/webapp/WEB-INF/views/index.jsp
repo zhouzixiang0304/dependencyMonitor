@@ -352,6 +352,21 @@
             .transition()
             .duration(5000)
             .style("opacity", 1);
+
+        //侧边栏展示调用和被调用方法
+        $.getJSON("/server/getInvocations/" + selectedVal, function (chosenNode) {
+            //clear previous notes
+            notes.selectAll('*').remove();
+
+            //该服务调用其他服务的方法
+            var listSon = notes.append('ul');
+            listSon.append('li')
+                .text("调用：\n" + chosenNode.sonInvocations + "\n");
+            //该服务被其他服务调用的方法
+            var listFather = notes.append('ul');
+            listFather.append('li')
+                .text("被调用：\n" + chosenNode.fatherInvocations);
+        });
     }
 </script>
 </body>
