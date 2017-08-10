@@ -3735,3 +3735,1366 @@ Storage files: (filename : modification date - size)
 2017-08-09 08:20:24.618+0000 ERROR [o.n.k.i.u.w.DefaultFileDeletionEventListener] 'dependencyMornitor.iml' which belongs to the store was deleted while database was running.
 2017-08-09 08:20:24.618+0000 ERROR [o.n.k.i.u.w.DefaultFileDeletionEventListener] 'dependencyMornitor.iml___jb_tmp___' which belongs to the store was deleted while database was running.
 2017-08-09 08:20:24.633+0000 ERROR [o.n.k.i.u.w.DefaultFileDeletionEventListener] 'dependencyMornitor.iml___jb_old___' which belongs to the store was deleted while database was running.
+2017-08-09 11:33:03.560+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 5024312ms.
+2017-08-09 11:40:37.515+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 274199ms.
+2017-08-10 02:12:29.760+0000 WARN [o.n.i.p.PageCache] The dbms.memory.pagecache.size setting has not been configured. It is recommended that this setting is always explicitly configured, to ensure the system has a balanced configuration. Until then, a computed heuristic value of 3220254720 bytes will be used instead. 
+2017-08-10 02:12:29.844+0000 INFO [o.n.k.i.f.CommunityEditionModule] No locking implementation specified, defaulting to 'community'
+2017-08-10 02:12:30.082+0000 INFO [o.n.k.AvailabilityGuard] Requirement makes database unavailable: Database available
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Neo4j Kernel properties:
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.connector.http.enabled=true
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.security.auth_enabled=true
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.type=BOLT
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=D:\code\dependencyMonitor\dependencyDB
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.directories.import=import
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.connector.https.enabled=true
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.connector.http.type=HTTP
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] unsupported.dbms.directories.database=D:\code\dependencyMonitor\dependencyDB
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.logs.http.enabled=false
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.connector.https.type=HTTP
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.allow_format_migration=true
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] unsupported.dbms.edition=community
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Diagnostics providers:
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.info.DiagnosticsManager
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] SYSTEM_MEMORY
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] JAVA_MEMORY
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] OPERATING_SYSTEM
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] CLASSPATH
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] LIBRARY_PATH
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] SYSTEM_PROPERTIES
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] NETWORK
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] System memory information:
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Total Physical memory: 7.71 GB
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Free Physical memory: 4.19 GB
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Committed virtual memory: 317.66 MB
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Total swap space: 8.21 GB
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Free swap space: 4.40 GB
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] JVM memory information:
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Free  memory: 98.92 MB
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Total memory: 134.00 MB
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Max   memory: 1.72 GB
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen]
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=6.13 MB, used=6.08 MB, max=240.00 MB, threshold=0.00 B
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=21.63 MB, used=20.52 MB, max=-1.00 B, threshold=0.00 B
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=3.13 MB, used=2.82 MB, max=1.00 GB, threshold=0.00 B
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Memory Pool: PS Eden Space (Heap memory): committed=31.00 MB, used=2.81 MB, max=648.50 MB, threshold=?
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Memory Pool: PS Survivor Space (Heap memory): committed=5.00 MB, used=0.00 B, max=5.00 MB, threshold=?
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Memory Pool: PS Old Gen (Heap memory): committed=98.00 MB, used=32.27 MB, max=1.29 GB, threshold=0.00 B
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Operating system information:
+2017-08-10 02:12:30.097+0000 INFO [o.n.k.i.DiagnosticsManager] Operating System: Windows 10; version: 10.0; arch: amd64; cpus: 8
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] Process id: 11016@LAPTOP-TNM378CO
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] Local timezone: Asia/Shanghai
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] JVM information:
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] VM Vendor: Oracle Corporation
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] VM Version: 25.60-b23
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] VM Arguments: [-Dexe4j.semaphoreName=Local\d:_neo4j_ce_3.2.1_bin_neo4j-ce.exe, -Dexe4j.isInstall4j=true, -Dexe4j.moduleName=D:\Neo4j CE 3.2.1\bin\neo4j-ce.exe, -Dexe4j.tempDir=, -Dexe4j.unextractedPosition=0, -Djava.library.path=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;D:\java\jdk7u17\bin;D:\java\jdk7u17\jre\bin;D:\mysql\install\bin;C:\Users\lsy\AppData\Local\Microsoft\WindowsApps;;d:\neo4j ce 3.2.1\jre\bin, -Dexe4j.consoleCodepage=cp0, -Dinstall4j.launcherId=24, -Dinstall4j.swt=false]
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] Java classpath:
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] D:\Neo4j CE 3.2.1\jre\classes
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/D:/Neo4j%20CE%203.2.1/jre/lib/ext/jaccess.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] D:\Neo4j CE 3.2.1\bin\neo4j-desktop-3.2.1.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/D:/Neo4j%20CE%203.2.1/jre/lib/ext/sunjce_provider.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] D:\Neo4j CE 3.2.1\jre\lib\charsets.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/D:/Neo4j%20CE%203.2.1/jre/lib/ext/jfxrt.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/D:/Neo4j%20CE%203.2.1/jre/lib/ext/sunec.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/D:/Neo4j%20CE%203.2.1/jre/lib/ext/zipfs.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] D:\Neo4j CE 3.2.1\jre\lib\sunrsasign.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] D:\Neo4j CE 3.2.1\jre\lib\rt.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] D:\Neo4j CE 3.2.1\jre\lib\jce.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/D:/Neo4j%20CE%203.2.1/jre/lib/ext/localedata.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/D:/Neo4j%20CE%203.2.1/bin/neo4j-desktop-3.2.1.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] D:\Neo4j CE 3.2.1\jre\lib\jsse.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/D:/Neo4j%20CE%203.2.1/jre/lib/ext/dnsns.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/D:/Neo4j%20CE%203.2.1/jre/lib/ext/nashorn.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] D:\Neo4j CE 3.2.1\jre\lib\jfr.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/D:/Neo4j%20CE%203.2.1/jre/lib/ext/cldrdata.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/D:/Neo4j%20CE%203.2.1/jre/lib/ext/sunmscapi.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [classpath] D:\Neo4j CE 3.2.1\.install4j\i4jruntime.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [bootstrap] D:\Neo4j CE 3.2.1\jre\lib\resources.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/D:/Neo4j%20CE%203.2.1/jre/lib/ext/sunpkcs11.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.1] file:/D:/Neo4j%20CE%203.2.1/jre/lib/ext/access-bridge-64.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager]  [loader.0] file:/D:/Neo4j%20CE%203.2.1/.install4j/i4jruntime.jar
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] Library path:
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] C:\ProgramData\Oracle\Java\javapath
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Intel\iCLS Client
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\iCLS Client
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] C:\Windows\System32
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] C:\Windows
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] C:\Windows\System32\wbem
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] C:\Windows\System32\WindowsPowerShell\v1.0
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] C:\Program Files\Git\cmd
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] D:\java\jdk7u17\bin
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] D:\java\jdk7u17\jre\bin
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] D:\mysql\install\bin
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] C:\Users\lsy\AppData\Local\Microsoft\WindowsApps
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] D:\Neo4j CE 3.2.1\bin
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] D:\Neo4j CE 3.2.1\jre\bin
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] System.properties:
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] exe4j.moduleName = D:\Neo4j CE 3.2.1\bin\neo4j-ce.exe
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] exe4j.semaphoreName = Local\d:_neo4j_ce_3.2.1_bin_neo4j-ce.exe
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] sun.boot.library.path = d:\neo4j ce 3.2.1\jre\bin
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] exe4j.consoleCodepage = cp0
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] path.separator = ;
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] file.encoding.pkg = sun.io
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] user.country = CN
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] user.script = 
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] sun.os.patch.level = 
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] install4j.exeDir = D:\Neo4j CE 3.2.1\bin\
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] user.dir = D:\Neo4j CE 3.2.1\bin
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] user.variant = 
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] exe4j.tempDir = 
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] sun.jnu.encoding = GBK
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] unsupported.dbms.udc.source = desktop
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] sun.awt.enableExtraMouseButtons = true
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] install4j.launcherId = 24
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] exe4j.isInstall4j = true
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] install4j.swt = false
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] user.home = C:\Users\lsy
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] user.timezone = Asia/Shanghai
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] file.encoding = GBK
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] user.name = lsy
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] sun.java.command = D:\Neo4j CE 3.2.1\bin\neo4j-ce.exe
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] sun.arch.data.model = 64
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] exe4j.launchName = D:\Neo4j CE 3.2.1\bin\neo4j-ce.exe
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] user.language = zh
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] awt.toolkit = sun.awt.windows.WToolkit
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] exe4j.unextractedPosition = 0
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] install4j.appDir = D:\Neo4j CE 3.2.1\
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] file.separator = \
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] sun.io.unicode.encoding = UnicodeLittle
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] sun.cpu.endian = little
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] sun.desktop = windows
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] sun.cpu.isalist = amd64
+2017-08-10 02:12:30.113+0000 INFO [o.n.k.i.DiagnosticsManager] Network information:
+2017-08-10 02:12:30.160+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Software Loopback Interface 1:
+2017-08-10 02:12:30.160+0000 INFO [o.n.k.i.DiagnosticsManager]     address: 127.0.0.1
+2017-08-10 02:12:30.160+0000 INFO [o.n.k.i.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2017-08-10 02:12:30.160+0000 INFO [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPPOE):
+2017-08-10 02:12:30.160+0000 INFO [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPTP):
+2017-08-10 02:12:30.160+0000 INFO [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6):
+2017-08-10 02:12:30.160+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Microsoft Kernel Debug Network Adapter:
+2017-08-10 02:12:30.160+0000 INFO [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (SSTP):
+2017-08-10 02:12:30.160+0000 INFO [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor):
+2017-08-10 02:12:30.176+0000 INFO [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IKEv2):
+2017-08-10 02:12:30.176+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Microsoft Teredo Tunneling Adapter:
+2017-08-10 02:12:30.176+0000 INFO [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:0:ffff:ffff:fffe%net3
+2017-08-10 02:12:30.176+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Microsoft ISATAP Adapter:
+2017-08-10 02:12:30.176+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Bluetooth Device (Personal Area Network):
+2017-08-10 02:12:30.176+0000 INFO [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:c168:c31f:a422:3874%eth3
+2017-08-10 02:12:30.176+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 3165:
+2017-08-10 02:12:30.176+0000 INFO [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:e8:84e8:2ad9:8224%wlan0
+2017-08-10 02:12:30.176+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller:
+2017-08-10 02:12:30.176+0000 INFO [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:45d9:61d9:a152:612%eth4
+2017-08-10 02:12:30.177+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Bluetooth Device (RFCOMM Protocol TDI):
+2017-08-10 02:12:30.177+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter:
+2017-08-10 02:12:30.177+0000 INFO [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:f59c:2ea2:7863:602d%wlan1
+2017-08-10 02:12:30.177+0000 INFO [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP):
+2017-08-10 02:12:30.177+0000 INFO [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (L2TP):
+2017-08-10 02:12:30.177+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller-WFP Native MAC Layer LightWeight Filter-0000:
+2017-08-10 02:12:30.177+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller-QoS Packet Scheduler-0000:
+2017-08-10 02:12:30.177+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Realtek PCIe GBE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-08-10 02:12:30.177+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 3165-WFP Native MAC Layer LightWeight Filter-0000:
+2017-08-10 02:12:30.177+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 3165-Virtual WiFi Filter Driver-0000:
+2017-08-10 02:12:30.178+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 3165-Native WiFi Filter Driver-0000:
+2017-08-10 02:12:30.178+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 3165-QoS Packet Scheduler-0000:
+2017-08-10 02:12:30.178+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 3165-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-08-10 02:12:30.178+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2017-08-10 02:12:30.178+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+2017-08-10 02:12:30.178+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+2017-08-10 02:12:30.178+0000 INFO [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2017-08-10 02:12:30.178+0000 INFO [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2017-08-10 02:12:30.445+0000 INFO [o.n.b.v.r.WorkerFactory] Bolt Server extension loaded.
+2017-08-10 02:12:30.445+0000 INFO [o.n.b.v.r.WorkerFactory] Bolt enabled on 127.0.0.1:7687.
+2017-08-10 02:12:30.530+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_2[v0.A.8] record format from store D:\code\dependencyMonitor\dependencyDB
+2017-08-10 02:12:30.561+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_2[v0.A.8] record format from store D:\code\dependencyMonitor\dependencyDB
+2017-08-10 02:12:30.561+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Format not configured. Selected format from the store: RecordFormat:StandardV3_2[v0.A.8]
+2017-08-10 02:12:31.147+0000 INFO [o.n.k.i.a.i.IndexingService] IndexingService.init: indexes not specifically mentioned above are ONLINE
+2017-08-10 02:12:31.184+0000 INFO [o.n.k.i.i.l.NativeLabelScanStore] Scan store recovery completed: Number of cleaned crashed pointers: 0 Number of pages visited: 3 Time spent: 3ms
+2017-08-10 02:12:31.199+0000 INFO [o.n.k.NeoStoreDataSource] No commits found after last check point (which is at LogPosition{logVersion=0, byteOffset=71354})
+2017-08-10 02:12:31.199+0000 INFO [o.n.k.i.s.DynamicArrayStore] Rebuilding id generator for[D:\code\dependencyMonitor\dependencyDB\neostore.nodestore.db.labels] ...
+2017-08-10 02:12:31.215+0000 INFO [o.n.k.i.s.DynamicArrayStore] [D:\code\dependencyMonitor\dependencyDB\neostore.nodestore.db.labels] high id=1 (defragged=0)
+2017-08-10 02:12:31.215+0000 INFO [o.n.k.i.s.DynamicArrayStore] D:\code\dependencyMonitor\dependencyDB\neostore.nodestore.db.labels rebuild id generator, highId=1 defragged count=0
+2017-08-10 02:12:31.215+0000 INFO [o.n.k.i.s.NodeStore] Rebuilding id generator for[D:\code\dependencyMonitor\dependencyDB\neostore.nodestore.db] ...
+2017-08-10 02:12:31.231+0000 INFO [o.n.k.i.s.NodeStore] [D:\code\dependencyMonitor\dependencyDB\neostore.nodestore.db] high id=18 (defragged=0)
+2017-08-10 02:12:31.231+0000 INFO [o.n.k.i.s.NodeStore] D:\code\dependencyMonitor\dependencyDB\neostore.nodestore.db rebuild id generator, highId=18 defragged count=0
+2017-08-10 02:12:31.231+0000 INFO [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[D:\code\dependencyMonitor\dependencyDB\neostore.propertystore.db.index.keys] ...
+2017-08-10 02:12:31.231+0000 INFO [o.n.k.i.s.DynamicStringStore] [D:\code\dependencyMonitor\dependencyDB\neostore.propertystore.db.index.keys] high id=8 (defragged=0)
+2017-08-10 02:12:31.231+0000 INFO [o.n.k.i.s.DynamicStringStore] D:\code\dependencyMonitor\dependencyDB\neostore.propertystore.db.index.keys rebuild id generator, highId=8 defragged count=0
+2017-08-10 02:12:31.231+0000 INFO [o.n.k.i.s.PropertyKeyTokenStore] Rebuilding id generator for[D:\code\dependencyMonitor\dependencyDB\neostore.propertystore.db.index] ...
+2017-08-10 02:12:31.246+0000 INFO [o.n.k.i.s.PropertyKeyTokenStore] [D:\code\dependencyMonitor\dependencyDB\neostore.propertystore.db.index] high id=7 (defragged=0)
+2017-08-10 02:12:31.246+0000 INFO [o.n.k.i.s.PropertyKeyTokenStore] D:\code\dependencyMonitor\dependencyDB\neostore.propertystore.db.index rebuild id generator, highId=7 defragged count=0
+2017-08-10 02:12:31.246+0000 INFO [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[D:\code\dependencyMonitor\dependencyDB\neostore.propertystore.db.strings] ...
+2017-08-10 02:12:31.262+0000 INFO [o.n.k.i.s.DynamicStringStore] [D:\code\dependencyMonitor\dependencyDB\neostore.propertystore.db.strings] high id=1 (defragged=0)
+2017-08-10 02:12:31.262+0000 INFO [o.n.k.i.s.DynamicStringStore] D:\code\dependencyMonitor\dependencyDB\neostore.propertystore.db.strings rebuild id generator, highId=1 defragged count=0
+2017-08-10 02:12:31.262+0000 INFO [o.n.k.i.s.DynamicArrayStore] Rebuilding id generator for[D:\code\dependencyMonitor\dependencyDB\neostore.propertystore.db.arrays] ...
+2017-08-10 02:12:31.262+0000 INFO [o.n.k.i.s.DynamicArrayStore] [D:\code\dependencyMonitor\dependencyDB\neostore.propertystore.db.arrays] high id=13 (defragged=0)
+2017-08-10 02:12:31.262+0000 INFO [o.n.k.i.s.DynamicArrayStore] D:\code\dependencyMonitor\dependencyDB\neostore.propertystore.db.arrays rebuild id generator, highId=13 defragged count=0
+2017-08-10 02:12:31.262+0000 INFO [o.n.k.i.s.PropertyStore] Rebuilding id generator for[D:\code\dependencyMonitor\dependencyDB\neostore.propertystore.db] ...
+2017-08-10 02:12:31.278+0000 INFO [o.n.k.i.s.PropertyStore] [D:\code\dependencyMonitor\dependencyDB\neostore.propertystore.db] high id=12 (defragged=0)
+2017-08-10 02:12:31.278+0000 INFO [o.n.k.i.s.PropertyStore] D:\code\dependencyMonitor\dependencyDB\neostore.propertystore.db rebuild id generator, highId=12 defragged count=0
+2017-08-10 02:12:31.278+0000 INFO [o.n.k.i.s.RelationshipStore] Rebuilding id generator for[D:\code\dependencyMonitor\dependencyDB\neostore.relationshipstore.db] ...
+2017-08-10 02:12:31.284+0000 INFO [o.n.k.i.s.RelationshipStore] [D:\code\dependencyMonitor\dependencyDB\neostore.relationshipstore.db] high id=21 (defragged=0)
+2017-08-10 02:12:31.284+0000 INFO [o.n.k.i.s.RelationshipStore] D:\code\dependencyMonitor\dependencyDB\neostore.relationshipstore.db rebuild id generator, highId=21 defragged count=0
+2017-08-10 02:12:31.284+0000 INFO [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[D:\code\dependencyMonitor\dependencyDB\neostore.relationshiptypestore.db.names] ...
+2017-08-10 02:12:31.284+0000 INFO [o.n.k.i.s.DynamicStringStore] [D:\code\dependencyMonitor\dependencyDB\neostore.relationshiptypestore.db.names] high id=2 (defragged=0)
+2017-08-10 02:12:31.284+0000 INFO [o.n.k.i.s.DynamicStringStore] D:\code\dependencyMonitor\dependencyDB\neostore.relationshiptypestore.db.names rebuild id generator, highId=2 defragged count=0
+2017-08-10 02:12:31.284+0000 INFO [o.n.k.i.s.RelationshipTypeTokenStore] Rebuilding id generator for[D:\code\dependencyMonitor\dependencyDB\neostore.relationshiptypestore.db] ...
+2017-08-10 02:12:31.300+0000 INFO [o.n.k.i.s.RelationshipTypeTokenStore] [D:\code\dependencyMonitor\dependencyDB\neostore.relationshiptypestore.db] high id=1 (defragged=0)
+2017-08-10 02:12:31.300+0000 INFO [o.n.k.i.s.RelationshipTypeTokenStore] D:\code\dependencyMonitor\dependencyDB\neostore.relationshiptypestore.db rebuild id generator, highId=1 defragged count=0
+2017-08-10 02:12:31.300+0000 INFO [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[D:\code\dependencyMonitor\dependencyDB\neostore.labeltokenstore.db.names] ...
+2017-08-10 02:12:31.315+0000 INFO [o.n.k.i.s.DynamicStringStore] [D:\code\dependencyMonitor\dependencyDB\neostore.labeltokenstore.db.names] high id=7 (defragged=0)
+2017-08-10 02:12:31.315+0000 INFO [o.n.k.i.s.DynamicStringStore] D:\code\dependencyMonitor\dependencyDB\neostore.labeltokenstore.db.names rebuild id generator, highId=7 defragged count=0
+2017-08-10 02:12:31.315+0000 INFO [o.n.k.i.s.LabelTokenStore] Rebuilding id generator for[D:\code\dependencyMonitor\dependencyDB\neostore.labeltokenstore.db] ...
+2017-08-10 02:12:31.315+0000 INFO [o.n.k.i.s.LabelTokenStore] [D:\code\dependencyMonitor\dependencyDB\neostore.labeltokenstore.db] high id=6 (defragged=0)
+2017-08-10 02:12:31.315+0000 INFO [o.n.k.i.s.LabelTokenStore] D:\code\dependencyMonitor\dependencyDB\neostore.labeltokenstore.db rebuild id generator, highId=6 defragged count=0
+2017-08-10 02:12:31.331+0000 INFO [o.n.k.i.s.SchemaStore] Rebuilding id generator for[D:\code\dependencyMonitor\dependencyDB\neostore.schemastore.db] ...
+2017-08-10 02:12:31.331+0000 INFO [o.n.k.i.s.SchemaStore] [D:\code\dependencyMonitor\dependencyDB\neostore.schemastore.db] high id=23 (defragged=0)
+2017-08-10 02:12:31.331+0000 INFO [o.n.k.i.s.SchemaStore] D:\code\dependencyMonitor\dependencyDB\neostore.schemastore.db rebuild id generator, highId=23 defragged count=0
+2017-08-10 02:12:31.331+0000 INFO [o.n.k.i.s.RelationshipGroupStore] Rebuilding id generator for[D:\code\dependencyMonitor\dependencyDB\neostore.relationshipgroupstore.db] ...
+2017-08-10 02:12:31.331+0000 INFO [o.n.k.i.s.RelationshipGroupStore] [D:\code\dependencyMonitor\dependencyDB\neostore.relationshipgroupstore.db] high id=1 (defragged=0)
+2017-08-10 02:12:31.331+0000 INFO [o.n.k.i.s.RelationshipGroupStore] D:\code\dependencyMonitor\dependencyDB\neostore.relationshipgroupstore.db rebuild id generator, highId=1 defragged count=0
+2017-08-10 02:12:31.331+0000 INFO [o.n.k.i.s.MetaDataStore] Rebuilding id generator for[D:\code\dependencyMonitor\dependencyDB\neostore] ...
+2017-08-10 02:12:31.347+0000 INFO [o.n.k.i.s.MetaDataStore] [D:\code\dependencyMonitor\dependencyDB\neostore] high id=15 (defragged=0)
+2017-08-10 02:12:31.347+0000 INFO [o.n.k.i.s.MetaDataStore] D:\code\dependencyMonitor\dependencyDB\neostore rebuild id generator, highId=15 defragged count=0
+2017-08-10 02:12:31.347+0000 INFO [o.n.k.i.a.i.IndexingService] IndexingService.start: indexes not specifically mentioned above are ONLINE
+2017-08-10 02:12:31.362+0000 INFO [o.n.k.i.DatabaseHealth] Database health set to OK
+2017-08-10 02:12:31.918+0000 INFO [o.n.k.AvailabilityGuard] Fulfilling of requirement makes database available: Database available
+2017-08-10 02:12:31.919+0000 INFO [o.n.k.i.f.GraphDatabaseFacadeFactory] Database is now ready
+2017-08-10 02:12:31.919+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2017-08-10 02:12:31.920+0000 INFO [o.n.k.i.DiagnosticsManager] Graph Database: community single StoreId{creationTime=1501743401255, randomId=-2283531312852122043, storeVersion=15813456178476550, upgradeTime=1501743401255, upgradeId=1}
+2017-08-10 02:12:31.920+0000 INFO [o.n.k.i.DiagnosticsManager] Kernel version: 3.2.1
+2017-08-10 02:12:31.920+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2017-08-10 02:12:31.921+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2017-08-10 02:12:31.921+0000 INFO [o.n.k.i.DiagnosticsManager] Store versions:
+2017-08-10 02:12:31.921+0000 INFO [o.n.k.i.DiagnosticsManager] Store versions:
+2017-08-10 02:12:31.921+0000 INFO [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore v0.A.8
+2017-08-10 02:12:31.921+0000 INFO [o.n.k.i.DiagnosticsManager]   NodeStore v0.A.8
+2017-08-10 02:12:31.921+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.8
+2017-08-10 02:12:31.921+0000 INFO [o.n.k.i.DiagnosticsManager]   PropertyIndexStore v0.A.8
+2017-08-10 02:12:31.921+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.8
+2017-08-10 02:12:31.921+0000 INFO [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore v0.A.8
+2017-08-10 02:12:31.921+0000 INFO [o.n.k.i.DiagnosticsManager]   PropertyStore v0.A.8
+2017-08-10 02:12:31.921+0000 INFO [o.n.k.i.DiagnosticsManager]   RelationshipStore v0.A.8
+2017-08-10 02:12:31.921+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.8
+2017-08-10 02:12:31.921+0000 INFO [o.n.k.i.DiagnosticsManager]   RelationshipTypeStore v0.A.8
+2017-08-10 02:12:31.921+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore v0.A.8
+2017-08-10 02:12:31.921+0000 INFO [o.n.k.i.DiagnosticsManager]   LabelTokenStore v0.A.8
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager]   SchemaStore v0.A.8
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager]   RelationshipGroupStore v0.A.8
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager]   NeoStore v0.A.8
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager] Id usage:
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager] Id usage:
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager]   NodeStore: used=18 high=17
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=8 high=7
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager]   PropertyIndexStore: used=7 high=6
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager]   ArrayPropertyStore: used=13 high=12
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager]   PropertyStore: used=12 high=11
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager]   RelationshipStore: used=21 high=20
+2017-08-10 02:12:31.922+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=2 high=1
+2017-08-10 02:12:31.923+0000 INFO [o.n.k.i.DiagnosticsManager]   RelationshipTypeStore: used=1 high=0
+2017-08-10 02:12:31.923+0000 INFO [o.n.k.i.DiagnosticsManager]   StringPropertyStore: used=7 high=6
+2017-08-10 02:12:31.923+0000 INFO [o.n.k.i.DiagnosticsManager]   LabelTokenStore: used=6 high=5
+2017-08-10 02:12:31.923+0000 INFO [o.n.k.i.DiagnosticsManager]   SchemaStore: used=23 high=22
+2017-08-10 02:12:31.923+0000 INFO [o.n.k.i.DiagnosticsManager]   RelationshipGroupStore: used=1 high=0
+2017-08-10 02:12:31.923+0000 INFO [o.n.k.i.DiagnosticsManager]   NeoStore: used=15 high=14
+2017-08-10 02:12:31.923+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2017-08-10 02:12:31.923+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS START ---
+2017-08-10 02:12:31.923+0000 INFO [o.n.k.i.DiagnosticsManager] Neostore records:
+2017-08-10 02:12:31.923+0000 INFO [o.n.k.i.DiagnosticsManager] TIME (Creation time): 1501743401255
+2017-08-10 02:12:31.923+0000 INFO [o.n.k.i.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): -2283531312852122043
+2017-08-10 02:12:31.924+0000 INFO [o.n.k.i.DiagnosticsManager] LOG_VERSION (Current log version): 0
+2017-08-10 02:12:31.924+0000 INFO [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 292
+2017-08-10 02:12:31.924+0000 INFO [o.n.k.i.DiagnosticsManager] STORE_VERSION (Store format version): 15813456178476550
+2017-08-10 02:12:31.924+0000 INFO [o.n.k.i.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+2017-08-10 02:12:31.924+0000 INFO [o.n.k.i.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 177
+2017-08-10 02:12:31.924+0000 INFO [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+2017-08-10 02:12:31.924+0000 INFO [o.n.k.i.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1501743401255
+2017-08-10 02:12:31.924+0000 INFO [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): -162265694752
+2017-08-10 02:12:31.924+0000 INFO [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): 0
+2017-08-10 02:12:31.924+0000 INFO [o.n.k.i.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+2017-08-10 02:12:31.924+0000 INFO [o.n.k.i.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 71354
+2017-08-10 02:12:31.924+0000 INFO [o.n.k.i.DiagnosticsManager] LAST_TRANSACTION_COMMIT_TIMESTAMP (Commit time timestamp for last committed transaction): 1502184080807
+2017-08-10 02:12:31.924+0000 INFO [o.n.k.i.DiagnosticsManager] UPGRADE_TRANSACTION_COMMIT_TIMESTAMP (Commit timestamp of transaction the most recent upgrade was performed at): 0
+2017-08-10 02:12:31.924+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS END ---
+2017-08-10 02:12:31.925+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE START ---
+2017-08-10 02:12:31.925+0000 INFO [o.n.k.i.DiagnosticsManager] Transaction log:
+2017-08-10 02:12:31.926+0000 INFO [o.n.k.i.DiagnosticsManager] Oldest transaction 2 found in log with version 0
+2017-08-10 02:12:31.926+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE END ---
+2017-08-10 02:12:31.926+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2017-08-10 02:12:31.926+0000 INFO [o.n.k.i.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 62271778816 / 55427358720 / 89
+Storage files: (filename : modification date - size)
+2017-08-10 02:12:31.927+0000 INFO [o.n.k.i.DiagnosticsManager]   certificates:
+2017-08-10 02:12:31.927+0000 INFO [o.n.k.i.DiagnosticsManager]     neo4j.cert: 2017-08-03T14:56:40+0800 - 1002.00 B
+2017-08-10 02:12:31.927+0000 INFO [o.n.k.i.DiagnosticsManager]     neo4j.key: 2017-08-03T14:56:40+0800 - 1.69 kB
+2017-08-10 02:12:31.927+0000 INFO [o.n.k.i.DiagnosticsManager]   - Total: 2017-08-03T14:56:40+0800 - 2.67 kB
+2017-08-10 02:12:31.928+0000 INFO [o.n.k.i.DiagnosticsManager]   data:
+2017-08-10 02:12:31.928+0000 INFO [o.n.k.i.DiagnosticsManager]     dbms:
+2017-08-10 02:12:31.928+0000 INFO [o.n.k.i.DiagnosticsManager]       auth: 2017-08-03T14:56:53+0800 - 113.00 B
+2017-08-10 02:12:31.928+0000 INFO [o.n.k.i.DiagnosticsManager]     - Total: 2017-08-03T14:56:53+0800 - 113.00 B
+2017-08-10 02:12:31.928+0000 INFO [o.n.k.i.DiagnosticsManager]   - Total: 2017-08-03T14:56:41+0800 - 113.00 B
+2017-08-10 02:12:31.928+0000 INFO [o.n.k.i.DiagnosticsManager]   index:
+2017-08-10 02:12:31.928+0000 INFO [o.n.k.i.DiagnosticsManager]     lucene:
+2017-08-10 02:12:31.928+0000 INFO [o.n.k.i.DiagnosticsManager]       node:
+2017-08-10 02:12:31.928+0000 INFO [o.n.k.i.DiagnosticsManager]         bookName:
+2017-08-10 02:12:31.929+0000 INFO [o.n.k.i.DiagnosticsManager]           segments_1: 2017-08-08T16:43:46+0800 - 71.00 B
+2017-08-10 02:12:31.929+0000 INFO [o.n.k.i.DiagnosticsManager]         - Total: 2017-08-10T10:12:30+0800 - 71.00 B
+2017-08-10 02:12:31.929+0000 INFO [o.n.k.i.DiagnosticsManager]         clazzName:
+2017-08-10 02:12:31.930+0000 INFO [o.n.k.i.DiagnosticsManager]           segments_1: 2017-08-08T16:43:46+0800 - 71.00 B
+2017-08-10 02:12:31.930+0000 INFO [o.n.k.i.DiagnosticsManager]         - Total: 2017-08-10T10:12:30+0800 - 71.00 B
+2017-08-10 02:12:31.930+0000 INFO [o.n.k.i.DiagnosticsManager]         funcName:
+2017-08-10 02:12:31.931+0000 INFO [o.n.k.i.DiagnosticsManager]           segments_1: 2017-08-08T16:43:46+0800 - 71.00 B
+2017-08-10 02:12:31.931+0000 INFO [o.n.k.i.DiagnosticsManager]         - Total: 2017-08-10T10:12:30+0800 - 71.00 B
+2017-08-10 02:12:31.931+0000 INFO [o.n.k.i.DiagnosticsManager]         serverName:
+2017-08-10 02:12:31.932+0000 INFO [o.n.k.i.DiagnosticsManager]           _k.cfe: 2017-08-08T17:21:19+0800 - 363.00 B
+2017-08-10 02:12:31.932+0000 INFO [o.n.k.i.DiagnosticsManager]           _k.cfs: 2017-08-08T17:21:19+0800 - 1.68 kB
+2017-08-10 02:12:31.932+0000 INFO [o.n.k.i.DiagnosticsManager]           _k.si: 2017-08-08T17:21:19+0800 - 359.00 B
+2017-08-10 02:12:31.932+0000 INFO [o.n.k.i.DiagnosticsManager]           _p.cfe: 2017-08-08T17:21:20+0800 - 363.00 B
+2017-08-10 02:12:31.932+0000 INFO [o.n.k.i.DiagnosticsManager]           _p.cfs: 2017-08-08T17:21:20+0800 - 1.68 kB
+2017-08-10 02:12:31.933+0000 INFO [o.n.k.i.DiagnosticsManager]           _p.si: 2017-08-08T17:21:20+0800 - 359.00 B
+2017-08-10 02:12:31.933+0000 INFO [o.n.k.i.DiagnosticsManager]           _q.cfe: 2017-08-08T17:21:20+0800 - 363.00 B
+2017-08-10 02:12:31.933+0000 INFO [o.n.k.i.DiagnosticsManager]           _q.cfs: 2017-08-08T17:21:20+0800 - 1.68 kB
+2017-08-10 02:12:31.933+0000 INFO [o.n.k.i.DiagnosticsManager]           _q.si: 2017-08-08T17:21:20+0800 - 359.00 B
+2017-08-10 02:12:31.933+0000 INFO [o.n.k.i.DiagnosticsManager]           _r.cfe: 2017-08-08T17:21:20+0800 - 363.00 B
+2017-08-10 02:12:31.933+0000 INFO [o.n.k.i.DiagnosticsManager]           _r.cfs: 2017-08-08T17:21:20+0800 - 1.68 kB
+2017-08-10 02:12:31.934+0000 INFO [o.n.k.i.DiagnosticsManager]           _r.si: 2017-08-08T17:21:20+0800 - 359.00 B
+2017-08-10 02:12:31.934+0000 INFO [o.n.k.i.DiagnosticsManager]           _s.cfe: 2017-08-08T17:21:20+0800 - 363.00 B
+2017-08-10 02:12:31.934+0000 INFO [o.n.k.i.DiagnosticsManager]           _s.cfs: 2017-08-08T17:21:20+0800 - 1.68 kB
+2017-08-10 02:12:31.934+0000 INFO [o.n.k.i.DiagnosticsManager]           _s.si: 2017-08-08T17:21:20+0800 - 359.00 B
+2017-08-10 02:12:31.934+0000 INFO [o.n.k.i.DiagnosticsManager]           _t.cfe: 2017-08-08T17:27:54+0800 - 363.00 B
+2017-08-10 02:12:31.934+0000 INFO [o.n.k.i.DiagnosticsManager]           _t.cfs: 2017-08-08T17:27:54+0800 - 1.68 kB
+2017-08-10 02:12:31.935+0000 INFO [o.n.k.i.DiagnosticsManager]           _t.si: 2017-08-08T17:27:54+0800 - 359.00 B
+2017-08-10 02:12:31.935+0000 INFO [o.n.k.i.DiagnosticsManager]           segments_3: 2017-08-08T17:47:15+0800 - 446.00 B
+2017-08-10 02:12:31.935+0000 INFO [o.n.k.i.DiagnosticsManager]         - Total: 2017-08-10T10:12:30+0800 - 14.73 kB
+2017-08-10 02:12:31.935+0000 INFO [o.n.k.i.DiagnosticsManager]         userName:
+2017-08-10 02:12:31.936+0000 INFO [o.n.k.i.DiagnosticsManager]           segments_1: 2017-08-08T16:43:46+0800 - 71.00 B
+2017-08-10 02:12:31.937+0000 INFO [o.n.k.i.DiagnosticsManager]         - Total: 2017-08-10T10:12:30+0800 - 71.00 B
+2017-08-10 02:12:31.937+0000 INFO [o.n.k.i.DiagnosticsManager]       - Total: 2017-08-08T11:00:16+0800 - 15.00 kB
+2017-08-10 02:12:31.937+0000 INFO [o.n.k.i.DiagnosticsManager]       relationship:
+2017-08-10 02:12:31.937+0000 INFO [o.n.k.i.DiagnosticsManager]         __rel_types__:
+2017-08-10 02:12:31.939+0000 INFO [o.n.k.i.DiagnosticsManager]           segments_1: 2017-08-03T15:06:41+0800 - 71.00 B
+2017-08-10 02:12:31.939+0000 INFO [o.n.k.i.DiagnosticsManager]         - Total: 2017-08-10T10:12:30+0800 - 71.00 B
+2017-08-10 02:12:31.939+0000 INFO [o.n.k.i.DiagnosticsManager]       - Total: 2017-08-03T15:06:41+0800 - 71.00 B
+2017-08-10 02:12:31.939+0000 INFO [o.n.k.i.DiagnosticsManager]     - Total: 2017-08-03T15:06:41+0800 - 15.07 kB
+2017-08-10 02:12:31.939+0000 INFO [o.n.k.i.DiagnosticsManager]   - Total: 2017-08-03T15:00:10+0800 - 15.07 kB
+2017-08-10 02:12:31.940+0000 INFO [o.n.k.i.DiagnosticsManager]   index.db: 2017-08-08T16:40:43+0800 - 795.00 B
+2017-08-10 02:12:31.940+0000 INFO [o.n.k.i.DiagnosticsManager]   logs:
+2017-08-10 02:12:31.945+0000 INFO [o.n.k.i.DiagnosticsManager]     debug.log: 2017-08-09T19:40:38+0800 - 474.44 kB
+2017-08-10 02:12:31.945+0000 INFO [o.n.k.i.DiagnosticsManager]   - Total: 2017-08-08T16:43:46+0800 - 474.44 kB
+2017-08-10 02:12:31.945+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore: 2017-08-08T17:47:15+0800 - 8.00 kB
+2017-08-10 02:12:31.945+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.counts.db.a: 2017-08-08T17:47:15+0800 - 704.00 B
+2017-08-10 02:12:31.945+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.counts.db.b: 2017-08-07T16:35:39+0800 - 704.00 B
+2017-08-10 02:12:31.946+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.id: 2017-08-10T10:12:31+0800 - 9.00 B
+2017-08-10 02:12:31.955+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.labelscanstore.db: 2017-08-10T10:12:31+0800 - 48.00 kB
+2017-08-10 02:12:31.955+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db: 2017-08-08T17:47:15+0800 - 8.00 kB
+2017-08-10 02:12:31.956+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2017-08-10T10:12:31+0800 - 9.00 B
+2017-08-10 02:12:31.956+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2017-08-07T16:35:39+0800 - 8.00 kB
+2017-08-10 02:12:31.957+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2017-08-10T10:12:31+0800 - 9.00 B
+2017-08-10 02:12:31.957+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db: 2017-08-08T17:47:15+0800 - 8.00 kB
+2017-08-10 02:12:31.958+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.id: 2017-08-10T10:12:31+0800 - 9.00 B
+2017-08-10 02:12:31.958+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.labels: 2017-08-03T14:56:41+0800 - 8.00 kB
+2017-08-10 02:12:31.959+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2017-08-10T10:12:31+0800 - 9.00 B
+2017-08-10 02:12:31.959+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db: 2017-08-08T17:47:15+0800 - 7.97 kB
+2017-08-10 02:12:31.959+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.arrays: 2017-08-08T17:47:15+0800 - 8.00 kB
+2017-08-10 02:12:31.960+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2017-08-10T10:12:31+0800 - 9.00 B
+2017-08-10 02:12:31.960+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.id: 2017-08-10T10:12:31+0800 - 9.00 B
+2017-08-10 02:12:31.961+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index: 2017-08-08T17:47:15+0800 - 8.00 kB
+2017-08-10 02:12:31.961+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.id: 2017-08-10T10:12:31+0800 - 9.00 B
+2017-08-10 02:12:31.962+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2017-08-07T16:35:39+0800 - 8.00 kB
+2017-08-10 02:12:31.963+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2017-08-10T10:12:31+0800 - 9.00 B
+2017-08-10 02:12:31.963+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.strings: 2017-08-03T14:56:41+0800 - 8.00 kB
+2017-08-10 02:12:31.964+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2017-08-10T10:12:31+0800 - 9.00 B
+2017-08-10 02:12:31.964+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2017-08-03T14:56:41+0800 - 8.00 kB
+2017-08-10 02:12:31.965+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2017-08-10T10:12:31+0800 - 9.00 B
+2017-08-10 02:12:31.965+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshipstore.db: 2017-08-08T17:47:15+0800 - 7.97 kB
+2017-08-10 02:12:31.966+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshipstore.db.id: 2017-08-10T10:12:31+0800 - 9.00 B
+2017-08-10 02:12:31.966+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db: 2017-08-08T16:36:36+0800 - 8.00 kB
+2017-08-10 02:12:31.967+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2017-08-10T10:12:31+0800 - 9.00 B
+2017-08-10 02:12:31.967+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2017-08-03T15:23:52+0800 - 8.00 kB
+2017-08-10 02:12:31.968+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2017-08-10T10:12:31+0800 - 9.00 B
+2017-08-10 02:12:31.968+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.schemastore.db: 2017-08-07T16:35:39+0800 - 8.00 kB
+2017-08-10 02:12:31.969+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.schemastore.db.id: 2017-08-10T10:12:31+0800 - 9.00 B
+2017-08-10 02:12:31.969+0000 INFO [o.n.k.i.DiagnosticsManager]   neostore.transaction.db.0: 2017-08-09T13:48:53+0800 - 69.72 kB
+2017-08-10 02:12:31.969+0000 INFO [o.n.k.i.DiagnosticsManager]   schema:
+2017-08-10 02:12:31.970+0000 INFO [o.n.k.i.DiagnosticsManager]     index:
+2017-08-10 02:12:31.970+0000 INFO [o.n.k.i.DiagnosticsManager]       lucene:
+2017-08-10 02:12:31.970+0000 INFO [o.n.k.i.DiagnosticsManager]         1:
+2017-08-10 02:12:31.970+0000 INFO [o.n.k.i.DiagnosticsManager]           1:
+2017-08-10 02:12:31.970+0000 INFO [o.n.k.i.DiagnosticsManager]             _w.cfe: 2017-08-08T17:47:14+0800 - 305.00 B
+2017-08-10 02:12:31.970+0000 INFO [o.n.k.i.DiagnosticsManager]             _w.cfs: 2017-08-08T17:47:14+0800 - 1.83 kB
+2017-08-10 02:12:31.970+0000 INFO [o.n.k.i.DiagnosticsManager]             _w.si: 2017-08-08T17:47:14+0800 - 396.00 B
+2017-08-10 02:12:31.970+0000 INFO [o.n.k.i.DiagnosticsManager]             segments_9: 2017-08-09T13:48:53+0800 - 150.00 B
+2017-08-10 02:12:31.971+0000 INFO [o.n.k.i.DiagnosticsManager]             write.lock: 2017-08-03T15:00:09+0800 - 0.00 B
+2017-08-10 02:12:31.971+0000 INFO [o.n.k.i.DiagnosticsManager]           - Total: 2017-08-09T13:48:53+0800 - 2.66 kB
+2017-08-10 02:12:31.971+0000 INFO [o.n.k.i.DiagnosticsManager]           failure-message: 2017-08-03T15:00:09+0800 - 16.00 kB
+2017-08-10 02:12:31.971+0000 INFO [o.n.k.i.DiagnosticsManager]         - Total: 2017-08-03T15:00:09+0800 - 18.66 kB
+2017-08-10 02:12:31.971+0000 INFO [o.n.k.i.DiagnosticsManager]         10:
+2017-08-10 02:12:31.971+0000 INFO [o.n.k.i.DiagnosticsManager]           1:
+2017-08-10 02:12:31.971+0000 INFO [o.n.k.i.DiagnosticsManager]             segments_4: 2017-08-09T13:48:53+0800 - 85.00 B
+2017-08-10 02:12:31.972+0000 INFO [o.n.k.i.DiagnosticsManager]             write.lock: 2017-08-08T16:40:43+0800 - 0.00 B
+2017-08-10 02:12:31.972+0000 INFO [o.n.k.i.DiagnosticsManager]           - Total: 2017-08-09T13:48:53+0800 - 85.00 B
+2017-08-10 02:12:31.972+0000 INFO [o.n.k.i.DiagnosticsManager]           failure-message: 2017-08-08T16:40:43+0800 - 16.00 kB
+2017-08-10 02:12:31.972+0000 INFO [o.n.k.i.DiagnosticsManager]         - Total: 2017-08-08T16:40:43+0800 - 16.08 kB
+2017-08-10 02:12:31.972+0000 INFO [o.n.k.i.DiagnosticsManager]         15:
+2017-08-10 02:12:31.972+0000 INFO [o.n.k.i.DiagnosticsManager]           1:
+2017-08-10 02:12:31.972+0000 INFO [o.n.k.i.DiagnosticsManager]             segments_4: 2017-08-09T13:48:53+0800 - 85.00 B
+2017-08-10 02:12:31.972+0000 INFO [o.n.k.i.DiagnosticsManager]             write.lock: 2017-08-08T16:40:43+0800 - 0.00 B
+2017-08-10 02:12:31.972+0000 INFO [o.n.k.i.DiagnosticsManager]           - Total: 2017-08-09T13:48:53+0800 - 85.00 B
+2017-08-10 02:12:31.973+0000 INFO [o.n.k.i.DiagnosticsManager]           failure-message: 2017-08-08T16:40:43+0800 - 16.00 kB
+2017-08-10 02:12:31.973+0000 INFO [o.n.k.i.DiagnosticsManager]         - Total: 2017-08-08T16:40:43+0800 - 16.08 kB
+2017-08-10 02:12:31.973+0000 INFO [o.n.k.i.DiagnosticsManager]         20:
+2017-08-10 02:12:31.973+0000 INFO [o.n.k.i.DiagnosticsManager]           1:
+2017-08-10 02:12:31.973+0000 INFO [o.n.k.i.DiagnosticsManager]             segments_4: 2017-08-09T13:48:53+0800 - 85.00 B
+2017-08-10 02:12:31.973+0000 INFO [o.n.k.i.DiagnosticsManager]             write.lock: 2017-08-08T16:40:43+0800 - 0.00 B
+2017-08-10 02:12:31.973+0000 INFO [o.n.k.i.DiagnosticsManager]           - Total: 2017-08-09T13:48:53+0800 - 85.00 B
+2017-08-10 02:12:31.973+0000 INFO [o.n.k.i.DiagnosticsManager]           failure-message: 2017-08-08T16:40:43+0800 - 16.00 kB
+2017-08-10 02:12:31.974+0000 INFO [o.n.k.i.DiagnosticsManager]         - Total: 2017-08-08T16:40:43+0800 - 16.08 kB
+2017-08-10 02:12:31.974+0000 INFO [o.n.k.i.DiagnosticsManager]         3:
+2017-08-10 02:12:31.974+0000 INFO [o.n.k.i.DiagnosticsManager]           1:
+2017-08-10 02:12:31.974+0000 INFO [o.n.k.i.DiagnosticsManager]             _w.cfe: 2017-08-08T17:47:14+0800 - 305.00 B
+2017-08-10 02:12:31.975+0000 INFO [o.n.k.i.DiagnosticsManager]             _w.cfs: 2017-08-08T17:47:14+0800 - 1.34 kB
+2017-08-10 02:12:31.975+0000 INFO [o.n.k.i.DiagnosticsManager]             _w.si: 2017-08-08T17:47:14+0800 - 396.00 B
+2017-08-10 02:12:31.975+0000 INFO [o.n.k.i.DiagnosticsManager]             segments_8: 2017-08-09T13:48:53+0800 - 150.00 B
+2017-08-10 02:12:31.975+0000 INFO [o.n.k.i.DiagnosticsManager]             write.lock: 2017-08-03T15:00:09+0800 - 0.00 B
+2017-08-10 02:12:31.975+0000 INFO [o.n.k.i.DiagnosticsManager]           - Total: 2017-08-09T13:48:53+0800 - 2.17 kB
+2017-08-10 02:12:31.975+0000 INFO [o.n.k.i.DiagnosticsManager]           failure-message: 2017-08-03T15:00:09+0800 - 16.00 kB
+2017-08-10 02:12:31.975+0000 INFO [o.n.k.i.DiagnosticsManager]         - Total: 2017-08-03T15:00:09+0800 - 18.17 kB
+2017-08-10 02:12:31.975+0000 INFO [o.n.k.i.DiagnosticsManager]         8:
+2017-08-10 02:12:31.975+0000 INFO [o.n.k.i.DiagnosticsManager]           1:
+2017-08-10 02:12:31.976+0000 INFO [o.n.k.i.DiagnosticsManager]             _w.cfe: 2017-08-08T17:47:15+0800 - 305.00 B
+2017-08-10 02:12:31.976+0000 INFO [o.n.k.i.DiagnosticsManager]             _w.cfs: 2017-08-08T17:47:15+0800 - 1.88 kB
+2017-08-10 02:12:31.976+0000 INFO [o.n.k.i.DiagnosticsManager]             _w.si: 2017-08-08T17:47:15+0800 - 396.00 B
+2017-08-10 02:12:31.976+0000 INFO [o.n.k.i.DiagnosticsManager]             segments_7: 2017-08-09T13:48:53+0800 - 150.00 B
+2017-08-10 02:12:31.976+0000 INFO [o.n.k.i.DiagnosticsManager]             write.lock: 2017-08-03T15:00:09+0800 - 0.00 B
+2017-08-10 02:12:31.976+0000 INFO [o.n.k.i.DiagnosticsManager]           - Total: 2017-08-09T13:48:53+0800 - 2.71 kB
+2017-08-10 02:12:31.976+0000 INFO [o.n.k.i.DiagnosticsManager]           failure-message: 2017-08-03T15:00:09+0800 - 16.00 kB
+2017-08-10 02:12:31.977+0000 INFO [o.n.k.i.DiagnosticsManager]         - Total: 2017-08-03T15:00:09+0800 - 18.71 kB
+2017-08-10 02:12:31.977+0000 INFO [o.n.k.i.DiagnosticsManager]       - Total: 2017-08-07T16:35:35+0800 - 103.80 kB
+2017-08-10 02:12:31.977+0000 INFO [o.n.k.i.DiagnosticsManager]     - Total: 2017-08-03T15:00:09+0800 - 103.80 kB
+2017-08-10 02:12:31.977+0000 INFO [o.n.k.i.DiagnosticsManager]   - Total: 2017-08-03T15:00:09+0800 - 103.80 kB
+2017-08-10 02:12:31.977+0000 INFO [o.n.k.i.DiagnosticsManager]   store_lock: 2017-08-03T14:56:41+0800 - 0.00 B
+2017-08-10 02:12:31.977+0000 INFO [o.n.k.i.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2017-08-10 02:12:33.171+0000 INFO [o.n.k.i.DiagnosticsManager] --- SERVER STARTED START ---
+2017-08-10 02:12:34.233+0000 INFO [o.n.k.i.DiagnosticsManager] --- SERVER STARTED END ---
+2017-08-10 02:13:10.801+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) RETURN n LIMIT 25
+2017-08-10 02:13:10.817+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n) RETURN n LIMIT 25
+2017-08-10 02:13:10.835+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:13:10.838+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:13:33.702+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 02:13:33.717+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 02:13:33.733+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 02:13:33.733+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 02:13:42.456+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:13:42.456+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:13:46.832+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 02:13:46.832+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 02:13:46.979+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 02:13:46.994+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 02:14:03.460+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:14:03.462+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:14:16.964+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 02:14:16.964+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 02:14:17.180+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 02:14:17.196+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 02:26:48.971+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) RETURN n LIMIT 25
+2017-08-10 02:26:48.972+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n) RETURN n LIMIT 25
+2017-08-10 02:26:49.065+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-08-10 02:26:49.066+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-08-10 02:27:10.295+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 02:27:10.295+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 02:27:10.326+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 02:27:10.326+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 02:27:10.628+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n:`Server`) return n
+2017-08-10 02:27:10.628+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n:`Server`) return n
+2017-08-10 02:27:10.728+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:27:10.728+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:27:40.473+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:27:40.473+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:27:58.024+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) RETURN n LIMIT 25
+2017-08-10 02:27:58.024+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n) RETURN n LIMIT 25
+2017-08-10 02:29:09.258+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 02:29:09.258+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 02:29:09.274+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 02:29:09.274+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 02:29:10.659+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 02:29:10.659+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 02:29:10.691+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 02:29:10.691+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 02:29:11.092+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:29:11.092+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:29:20.692+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 02:29:20.692+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 02:29:20.793+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 02:29:20.793+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 02:29:21.210+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:29:21.210+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:29:25.464+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:29:25.466+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:29:50.874+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 02:29:50.874+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 02:29:50.990+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 02:29:50.990+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 02:29:51.942+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:29:51.942+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:30:07.458+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:30:07.458+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:31:51.599+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 02:31:51.600+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 02:31:51.616+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 02:31:51.617+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 02:31:52.378+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [16758]:  Starting check pointing...
+2017-08-10 02:31:52.378+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [16758]:  Starting store flush...
+2017-08-10 02:31:52.746+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 16774 to [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.b], from [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.a].
+2017-08-10 02:31:52.762+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 16774 to [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.b], from [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.a].
+2017-08-10 02:31:52.799+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [16758]:  Store flush completed
+2017-08-10 02:31:52.799+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [16758]:  Starting appending check point entry into the tx log...
+2017-08-10 02:31:52.799+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [16758]:  Appending check point entry into the tx log completed
+2017-08-10 02:31:52.799+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [16758]:  Check pointing completed
+2017-08-10 02:31:52.799+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-08-10 02:31:52.799+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-08-10 02:31:53.484+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:31:53.485+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:32:55.464+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:32:55.464+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:37:42.525+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: EXPLAIN MATCH (n) RETURN n LIMIT 25
+2017-08-10 02:37:42.526+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n) RETURN n LIMIT 25
+2017-08-10 02:37:50.201+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-08-10 02:37:50.202+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-08-10 02:41:07.554+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 02:41:07.555+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 02:41:07.568+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 02:41:07.569+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 02:41:19.849+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:41:19.849+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:46:53.660+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [65009]:  Starting check pointing...
+2017-08-10 02:46:53.660+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [65009]:  Starting store flush...
+2017-08-10 02:46:54.161+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 65031 to [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.a], from [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.b].
+2017-08-10 02:46:54.161+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 65031 to [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.a], from [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.b].
+2017-08-10 02:46:54.208+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [65009]:  Store flush completed
+2017-08-10 02:46:54.208+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [65009]:  Starting appending check point entry into the tx log...
+2017-08-10 02:46:54.208+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [65009]:  Appending check point entry into the tx log completed
+2017-08-10 02:46:54.208+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [65009]:  Check pointing completed
+2017-08-10 02:46:54.208+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-08-10 02:46:54.208+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-08-10 02:49:35.045+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 02:49:35.045+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 02:49:35.083+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 02:49:35.083+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 02:49:38.148+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n:`Server`) return n
+2017-08-10 02:49:38.149+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n:`Server`) return n
+2017-08-10 02:56:25.892+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:56:25.892+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:56:51.464+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:56:51.464+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:56:55.967+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:56:55.967+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 02:57:12.455+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:57:12.455+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 02:57:29.588+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) RETURN n
+2017-08-10 02:57:29.589+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n) RETURN n
+2017-08-10 03:01:54.790+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [126488]:  Starting check pointing...
+2017-08-10 03:01:54.790+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [126488]:  Starting store flush...
+2017-08-10 03:01:54.906+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 126488 to [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.b], from [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.a].
+2017-08-10 03:01:54.906+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 126488 to [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.b], from [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.a].
+2017-08-10 03:01:54.937+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [126488]:  Store flush completed
+2017-08-10 03:01:54.937+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [126488]:  Starting appending check point entry into the tx log...
+2017-08-10 03:01:54.952+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [126488]:  Appending check point entry into the tx log completed
+2017-08-10 03:01:54.952+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [126488]:  Check pointing completed
+2017-08-10 03:01:54.952+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-08-10 03:01:54.952+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-08-10 03:02:45.972+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 03:02:45.972+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 03:02:45.994+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 03:02:45.994+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 03:02:46.626+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:02:46.626+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:02:46.657+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:02:46.657+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:02:47.458+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:02:47.458+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:02:51.884+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 03:02:51.884+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 03:03:00.801+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:03:00.801+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:03:00.817+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:03:00.817+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:03:08.456+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:03:08.456+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:03:37.779+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 03:03:37.781+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 03:03:43.265+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:03:43.265+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:03:43.265+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:03:43.265+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:04:11.458+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:04:11.459+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:10:18.833+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 03:10:18.833+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 03:10:18.864+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 03:10:18.864+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 03:10:19.148+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n:`Server`) return n
+2017-08-10 03:10:19.148+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n:`Server`) return n
+2017-08-10 03:12:55.454+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:12:55.469+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:13:07.365+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 03:13:07.365+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 03:13:07.397+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 03:13:07.397+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 03:13:07.713+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n:`Server`) return n
+2017-08-10 03:13:07.713+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n:`Server`) return n
+2017-08-10 03:13:08.098+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:13:08.098+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:13:08.130+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:13:08.131+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:13:13.204+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 03:13:13.204+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 03:13:16.460+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:13:16.460+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:13:22.865+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:13:22.865+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:13:22.865+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:13:22.865+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:13:38.122+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 03:13:38.122+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 03:13:38.153+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 03:13:38.153+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 03:13:38.423+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n:`Server`) return n
+2017-08-10 03:13:38.423+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n:`Server`) return n
+2017-08-10 03:13:58.468+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:13:58.471+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:14:03.669+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 03:14:03.670+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 03:14:03.688+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 03:14:03.688+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 03:14:04.004+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n:`Server`) return n
+2017-08-10 03:14:04.004+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n:`Server`) return n
+2017-08-10 03:14:04.405+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:14:04.405+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:14:04.436+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:14:04.436+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:14:27.290+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 03:14:27.290+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 03:16:34.561+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 03:16:34.561+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 03:16:43.723+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:16:43.723+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:16:43.738+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:16:43.738+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:16:45.456+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:16:45.456+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:16:55.655+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [147991]:  Starting check pointing...
+2017-08-10 03:16:55.655+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [147991]:  Starting store flush...
+2017-08-10 03:16:55.940+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 148006 to [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.a], from [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.b].
+2017-08-10 03:16:55.940+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 148006 to [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.a], from [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.b].
+2017-08-10 03:16:55.971+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [147991]:  Store flush completed
+2017-08-10 03:16:55.971+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [147991]:  Starting appending check point entry into the tx log...
+2017-08-10 03:16:55.971+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [147991]:  Appending check point entry into the tx log completed
+2017-08-10 03:16:55.971+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [147991]:  Check pointing completed
+2017-08-10 03:16:55.971+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-08-10 03:16:55.971+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-08-10 03:17:21.295+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 03:17:21.295+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} return labels(n) as labels
+2017-08-10 03:17:27.300+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:17:27.300+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MERGE (n:`Server` {`serverId`: {value}}) ON CREATE SET n={props}  return n
+2017-08-10 03:17:27.305+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:17:27.305+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) where id(n)={nodeId} set n:`Server`:`_Server`
+2017-08-10 03:17:48.463+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:17:48.463+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-08-10 03:23:41.783+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n:`Server`) return n
+2017-08-10 03:23:41.783+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n:`Server`) return n
+2017-08-10 03:29:39.812+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) RETURN n
+2017-08-10 03:29:39.812+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n) RETURN n
+2017-08-10 03:29:40.551+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-08-10 03:29:40.552+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-08-10 03:30:39.628+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 03:30:39.628+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (ref:ReferenceNode {name:{name}}) RETURN ref
+2017-08-10 03:30:39.666+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 03:30:39.666+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) with n limit 1 set n:`SDN_LABEL_STRATEGY` remove n:`SDN_LABEL_STRATEGY` return count(*)
+2017-08-10 03:31:56.642+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [157040]:  Starting check pointing...
+2017-08-10 03:31:56.642+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [157040]:  Starting store flush...
+2017-08-10 03:31:56.942+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 157040 to [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.b], from [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.a].
+2017-08-10 03:31:56.958+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 157040 to [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.b], from [D:\code\dependencyMonitor\dependencyDB\neostore.counts.db.a].
+2017-08-10 03:31:56.973+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [157040]:  Store flush completed
+2017-08-10 03:31:56.973+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [157040]:  Starting appending check point entry into the tx log...
+2017-08-10 03:31:56.973+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [157040]:  Appending check point entry into the tx log completed
+2017-08-10 03:31:56.973+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [157040]:  Check pointing completed
+2017-08-10 03:31:56.973+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-08-10 03:31:56.973+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
