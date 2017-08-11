@@ -1077,7 +1077,7 @@
       <workItem from="1502179350830" duration="665000" />
       <workItem from="1502181843195" duration="14311000" />
       <workItem from="1502257810437" duration="10078000" />
-      <workItem from="1502417621711" duration="5604000" />
+      <workItem from="1502417621711" duration="6342000" />
     </task>
     <task id="LOCAL-00001" summary="添加侧边栏，可收缩">
       <created>1502023563679</created>
@@ -1150,7 +1150,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51937000" />
+    <option name="totallyTimeSpent" value="52675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
