@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a105ef80-dd64-4257-ad56-e5860c049fd0" name="Default" comment="double click nodes open sidebar">
+<<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/dependencyDB/index/lucene/node/serverName/_ct6.fdt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dependencyDB/index/lucene/node/serverName/_ct6.fdx" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dependencyDB/index/lucene/node/serverName/_ct6.fnm" afterPath="" />
@@ -58,13 +59,34 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/dependencyDB/index/lucene/node/serverName/_cth.cfs" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dependencyDB/index/lucene/node/serverName/_cth.si" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dependencyDB/index/lucene/node/serverName/segments_8" afterPath="" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencyDB/neostore.labelscanstore.db" afterPath="$PROJECT_DIR$/dependencyDB/neostore.labelscanstore.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencyDB/neostore.nodestore.db.id" afterPath="$PROJECT_DIR$/dependencyDB/neostore.nodestore.db.id" />
+>>>>>>> dev-zhou
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencyDB/neostore.nodestore.db.labels.id" afterPath="$PROJECT_DIR$/dependencyDB/neostore.nodestore.db.labels.id" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencyDB/neostore.propertystore.db.arrays.id" afterPath="$PROJECT_DIR$/dependencyDB/neostore.propertystore.db.arrays.id" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencyDB/neostore.propertystore.db.id" afterPath="$PROJECT_DIR$/dependencyDB/neostore.propertystore.db.id" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencyDB/neostore.propertystore.db.index.keys.id" afterPath="$PROJECT_DIR$/dependencyDB/neostore.propertystore.db.index.keys.id" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencyDB/neostore.propertystore.db.strings.id" afterPath="$PROJECT_DIR$/dependencyDB/neostore.propertystore.db.strings.id" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencyDB/logs/debug.log" afterPath="$PROJECT_DIR$/dependencyDB/logs/debug.log" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencyDB/neostore.relationshipstore.db.id" afterPath="$PROJECT_DIR$/dependencyDB/neostore.relationshipstore.db.id" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cmbsj/monitor/service/impl/ServerServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/cmbsj/monitor/service/impl/ServerServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/cmbsj/monitor/util/ToD3Format.class" afterPath="$PROJECT_DIR$/target/classes/com/cmbsj/monitor/util/ToD3Format.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dependencyMonitor/WEB-INF/classes/com/cmbsj/monitor/service/impl/ServerServiceImpl.class" afterPath="$PROJECT_DIR$/target/dependencyMonitor/WEB-INF/classes/com/cmbsj/monitor/service/impl/ServerServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dependencyMonitor/WEB-INF/classes/com/cmbsj/monitor/util/ToD3Format.class" afterPath="$PROJECT_DIR$/target/dependencyMonitor/WEB-INF/classes/com/cmbsj/monitor/util/ToD3Format.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/delete/ServerServiceOperation.class" afterPath="$PROJECT_DIR$/target/test-classes/delete/ServerServiceOperation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencyDB/logs/debug.log" afterPath="$PROJECT_DIR$/dependencyDB/logs/debug.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/neo4j.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/neo4j.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dependencyMonitor/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/dependencyMonitor/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dependencyMonitor/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/target/dependencyMonitor/WEB-INF/views/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/dependencyMonitor/resources/css/neo4j.css" afterPath="$PROJECT_DIR$/target/dependencyMonitor/resources/css/neo4j.css" />
+>>>>>>> dev-zhou
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -127,13 +149,31 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="133">
               <caret line="207" column="14" lean-forward="false" selection-start-line="207" selection-start-column="14" selection-end-line="207" selection-end-column="14" />
+=======
+            <state relative-caret-position="106">
+              <caret line="212" column="20" lean-forward="false" selection-start-line="212" selection-start-column="20" selection-end-line="212" selection-end-column="20" />
+>>>>>>> dev-zhou
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="neo4j.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/neo4j.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> dev-zhou
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -172,8 +212,13 @@
         <option value="$PROJECT_DIR$/src/main/test/java/com/cmbsj/monitor/service/ServerServiceTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmbsj/monitor/util/ToD3Format.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/neo4j.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
+=======
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/neo4j.css" />
+>>>>>>> dev-zhou
       </list>
     </option>
   </component>
@@ -1077,7 +1122,11 @@
       <workItem from="1502179350830" duration="665000" />
       <workItem from="1502181843195" duration="14311000" />
       <workItem from="1502257810437" duration="10078000" />
+<<<<<<< HEAD
       <workItem from="1502417621711" duration="6342000" />
+=======
+      <workItem from="1502417621711" duration="4969000" />
+>>>>>>> dev-zhou
     </task>
     <task id="LOCAL-00001" summary="添加侧边栏，可收缩">
       <created>1502023563679</created>
@@ -1150,10 +1199,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="52675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="51302000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+>>>>>>> dev-zhou
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1166,7 +1223,11 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20949264" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39443535" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23567921" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+>>>>>>> dev-zhou
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19062027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1666,8 +1727,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="133">
           <caret line="207" column="14" lean-forward="false" selection-start-line="207" selection-start-column="14" selection-end-line="207" selection-end-column="14" />
+=======
+        <state relative-caret-position="106">
+          <caret line="212" column="20" lean-forward="false" selection-start-line="212" selection-start-column="20" selection-end-line="212" selection-end-column="20" />
+>>>>>>> dev-zhou
           <folding />
         </state>
       </provider>

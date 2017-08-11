@@ -201,14 +201,26 @@
                     //clear previous notes
                     notes.selectAll('*').remove();
 
+                    var son = chosenNode.sonInvocations;
+                    var father = chosenNode.fatherInvocations;
                     //该服务调用其他服务的方法
                     var listSon = notes.append('ul');
-                    listSon.append('li')
-                        .text("调用：\n" + chosenNode.sonInvocations + "\n");
+                    listSon.selectAll("li")
+                        .data(son)
+                        .enter()
+                        .append('li')
+                        .text(function (d) {
+                            return d;
+                        })
                     //该服务被其他服务调用的方法
                     var listFather = notes.append('ul');
-                    listFather.append('li')
-                        .text("被调用：\n" + chosenNode.fatherInvocations);
+                    listFather.selectAll("li")
+                        .data(father)
+                        .enter()
+                        .append('li')
+                        .text( function (d) {
+                                return d;
+                            });
                 });
             });
 
