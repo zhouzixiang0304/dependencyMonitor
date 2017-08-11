@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -21,11 +23,16 @@ public class ServerServiceOperation {
     ServerService serverService;
 
     @Test
-    public void saveNodesAndRelations(){
+    public void test1(){
         serverService.saveNodesAndRelations();
     }
 
     @Test
+    public void test2(){
+        serverService.graph();
+    }
+
+/*    @Test
     public void getWhoInvokeMeAndMyTargetsTest() throws ServerNameNotFoundException{
         Map<String, List<String>> class4 = serverService.getWhoInvokeMeAndMyTargets("class4");
         List<String> fatherInvocations = class4.get("fatherInvocations");
@@ -38,5 +45,5 @@ public class ServerServiceOperation {
                 sonInvocations) {
             System.out.println(sonInvocation);
         }
-    }
+    }*/
 }

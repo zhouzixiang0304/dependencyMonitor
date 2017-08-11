@@ -16,23 +16,26 @@
     <schema id="10" parent="1" name="self"/>
     <schema id="11" parent="1" name="test"/>
     <table id="12" parent="2" name="serverconnection"/>
-    <column id="13" parent="12" name="source_class">
+    <routine id="13" parent="2" name="batchinsert">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <column id="14" parent="12" name="source_class">
       <Position>1</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="14" parent="12" name="source_func">
+    <column id="15" parent="12" name="source_func">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="15" parent="12" name="target_class">
+    <column id="16" parent="12" name="target_class">
       <Position>3</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="16" parent="12" name="target_func">
+    <column id="17" parent="12" name="target_func">
       <Position>4</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="17" parent="12" name="description">
+    <column id="18" parent="12" name="description">
       <Position>5</Position>
       <DataType>varchar(50)|0</DataType>
     </column>

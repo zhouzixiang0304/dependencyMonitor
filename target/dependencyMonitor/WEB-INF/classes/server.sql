@@ -20,3 +20,23 @@ INSERT INTO serverconnection VALUES ("class5","func2","class4","func2","test7");
 INSERT INTO serverconnection VALUES ("class4","func2","class6","func2","test8");
 INSERT INTO serverconnection VALUES ("class3","func2","class1","func2","test9");
 INSERT INTO serverconnection VALUES ("class6","func2","class2","func2","test10");
+
+DROP PROCEDURE batchinsert;
+CREATE PROCEDURE batchinsert()
+  BEGIN
+    DECLARE i INT;
+    SET i=1;
+    WHILE i < 1001 DO
+      INSERT INTO serverconnection VALUES (
+        concat("class",cast(i*3%1000 AS CHAR)),
+        concat("func",cast(i%7 AS CHAR)),
+        concat("class",cast(i*7%1000 AS CHAR)),
+        concat("func",cast(i*3%7 AS CHAR)),
+        concat("test",cast(i AS CHAR))
+      );
+      SET i = i + 1;
+    END WHILE;
+  END;
+CALL batchinsert();
+
+# INSERT INTO
