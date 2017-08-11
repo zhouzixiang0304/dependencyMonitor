@@ -117,9 +117,6 @@ main{
 #MsgList>li span{
 	padding-right:10px;
 }
-#MsgList>li{
-    padding-top: 10px;
-}
 .link{
 	fill:none;
     stroke: #ccc;
