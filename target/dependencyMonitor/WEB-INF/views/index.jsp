@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src ="/resources/js/jquery.min.js"></script>
-    <script type ='text/javascript'src="/resources/js/jquery-ui.min.js"></script>
+    <script src="/resources/js/jquery.min.js"></script>
+    <script type='text/javascript' src="/resources/js/jquery-ui.min.js"></script>
     <%--<script type ='text/javascript' src="/resources/js/jquery-ui.css"></script>--%>
     <%--<script type ='text/javascript' src="/resources/js/jquery-ui.css"></script>--%>
     <%--<script type ='text/javascript' src="/resources/js/neo4j.css"></script>--%>
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/resources/css/bootstrap.css">
     <link rel="stylesheet" href="/resources/css/neo4j.css"/>
     <%--<link rel="stylesheet"--%>
-          <%--href="http://neo4j-contrib.github.io/developer-resources/language-guides/assets/css/main.css">--%>
+    <%--href="http://neo4j-contrib.github.io/developer-resources/language-guides/assets/css/main.css">--%>
     <title>Dependency Monitor</title>
 
     <style>
@@ -57,17 +57,17 @@
 <script>
     //aside on
     $("#collapse").click(function () {
-        $("#detailsArea").animate({width:'20px'});
-        $("#colOpen").css("display","block");
-        $("#seaBox").css("display","none");
-        $(this).css("display","none");
+        $("#detailsArea").animate({width: '20px'});
+        $("#colOpen").css("display", "block");
+        $("#seaBox").css("display", "none");
+        $(this).css("display", "none");
     });
     //aside off
     $("#colOpen").click(function () {
-        $("#detailsArea").animate({width:'280px'});
-        $("#collapse").css("display","block");
-        $("#seaBox").css("display","block");
-        $(this).css("display","none");
+        $("#detailsArea").animate({width: '280px'});
+        $("#collapse").css("display", "block");
+        $("#seaBox").css("display", "block");
+        $(this).css("display", "none");
     });
 
     var notes = d3.select('#MsgList');
@@ -75,23 +75,25 @@
     var optArray = []; //PLACE HOLDER FOR SEARCH NAMES
     var w = window.innerWidth;
     var h = window.innerHeight;
-//    var width = 800, height = 800;
+    //    var width = 800, height = 800;
     var focus_node = null;
     var highlight_node = null;
 
+    var highlight_color = "#569edc";
     var highlight_trans = 0.1;
     /*d3.layout.force 基于物理模拟的位置连接，force.charge 获取或设置节点电荷数（表示吸引或排斥），
      linkDistance 获取或设置节点间连接线的距离， size获取宽和高*/
     var force = d3.layout.force().size([w, h])
-        .charge(-2000).linkDistance(Math.min(w,h)/3);
-    /**/
+        .charge(-2000).linkDistance(Math.min(w, h) / 3);
+
+    var default_link_color = "#cbcbcb";
     var min_zoom = 0.2;
     var max_zoom = 7;
     var svg = d3.select("#graph").append("svg")
-        .attr('width',w)
-        .attr('height',h)
+        .attr('width', w)
+        .attr('height', h)
         .attr("pointer-events", "all");
-    var zoom = d3.behavior.zoom().scaleExtent([min_zoom,max_zoom]);
+    var zoom = d3.behavior.zoom().scaleExtent([min_zoom, max_zoom]);
     var g = svg.append("g");
 
     //绘制箭头
@@ -112,6 +114,15 @@
     d3.json("/server/graph", function (error, graph) {
         if (error) return;
 
+        var linkedByIndex = {};
+        graph.links.forEach(function (d) {
+            linkedByIndex[d.source + "," + d.target] = true;
+        });
+        function isConnected(a, b) {
+            return linkedByIndex[a.index + "," + b.index] || linkedByIndex[b.index + "," + a.index]
+                || a.index == b.index;
+        }
+
         //COLLECT ALL THE NODE NAMES FOR SEARCH AUTO-COMPLETE
         for (var i = 0; i < graph.nodes.length; i++) {
             optArray.push(graph.nodes[i].serverName);
@@ -124,7 +135,7 @@
         var link = g.selectAll(".link")
             .data(graph.links).enter()
             .append("line")
-            .style("stroke", "#818181")
+            .style("stroke", default_link_color)
             .style("stroke-width", 0.5)
             .style("pointer-events", "none")
             .attr("class", "link")
@@ -137,65 +148,162 @@
         var node = gNode.append("circle")
             .style("fill", "#c02b11")
             .style('stroke', '#ffffff')
-            .style('stroke-width','4')
+            .style('stroke-width', '4')
             .attr("r", 15)
             .call(force.drag);
 
         //节点文字
-        var text = g.selectAll(".text").data(graph.nodes).enter().append("text")
-            .attr("dx","-1.3em").attr("dy", "2.5em").style('fill', '#a5a5a5').style('font-size', '12px')
+        var text = g.selectAll(".text").data(graph.nodes)
+            .enter().append("text")
+            .attr("dx", "-1.3em").attr("dy", "2.5em")
+            .style('fill', '#a5a5a5')
+            .style('font-size', '12px')
             .style('text-shadow', '0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff')
             .text(function (d) {
                 return d.serverName;
             });
 
         //set events
-        //
-        node.on("mousedown",function(d){
-            d3.event.stopPropagation(); //解决拖动SVG时不能拖动节点
-            focus_node = d;
-            set_focus(d);
-            if(highlight_node === null) set_highlight(d)
-        });
-        //double click nodes open sidebar
-        node.on("dblclick",function (d) {
-            $("#detailsArea").animate({width:'280px'});
-            $("#collapse").css("display","block");
-            $("#seaBox").css("display","block");
-            $("#colOpen").css("display","none");
-
-            // Delete the current notes section for new notes
-            notes.selectAll('*').remove();
-
-            var list = notes.append('ul');
-                list.append('li')
-                    .text(d.connections);
-            notes.transition().style({'opacity':1});
-        });
+        node
+            .on("mouseover", function (d) {
+                set_highlight(d);
+            })
+            .on("mousedown", function (d) {
+                d3.event.stopPropagation(); //解决拖动SVG时不能拖动节点
+                focus_node = d;
+                set_focus(d);
+                if (highlight_node === null) set_highlight(d)
+            })
+            .on("mouseout", function (d) {
+                exit_highlight();
+            })
+            //double click nodes open sidebar
+            .on("dblclick", function (d) {
+                $("#detailsArea").animate({width: '280px'});
+                $("#collapse").css("display", "block");
+                $("#seaBox").css("display", "block");
+                $("#colOpen").css("display", "none");
 
 
-        //鼠标操作效果
-        //TODO
+//            notes.append('h5').text(d.serverName);
+//            var listFather = notes.append('ul');
+//                listFather.append('li')
+//                    .text(fatherConnections);
+
+                d3.event.stopPropagation(); //解决拖动SVG时不能拖动节点
+                focus_node = d;
+                console.log(focus_node.serverName);
+                set_focus(d);
+                if (highlight_node === null) set_highlight(d)
+
+                //侧边栏展示调用和被调用方法
+                $.getJSON("/server/getInvocations/" + focus_node.serverName, function (chosenNode) {
+                    //clear previous notes
+                    notes.selectAll('*').remove();
+
+                    var son = chosenNode.sonInvocations;
+                    var father = chosenNode.fatherInvocations;
+                    //该服务调用其他服务的方法
+                    var listSon = notes.append('ul');
+                    listSon.selectAll("li")
+                        .data(son)
+                        .enter()
+                        .append('li')
+                        .text(function (d) {
+                            return d;
+                        })
+                    //该服务被其他服务调用的方法
+                    var listFather = notes.append('ul');
+                    listFather.selectAll("li")
+                        .data(father)
+                        .enter()
+                        .append('li')
+                        .text( function (d) {
+                                return d;
+                            });
+                });
+            });
+
+
+        // cancel highlights options
+        d3.select(window)
+            .on("mouseup", function () {
+                if (focus_node !== null) {
+                    focus_node = null;
+                    if (highlight_trans < 1) {
+                        node.style("opacity", 1);
+                        text.style("opacity", 1);
+                        link.style("opacity", 1);
+                    }
+                }
+                if (highlight_node === null) exit_highlight();
+            })
+            .on("dblclick", function () {
+                if (focus_node !== null) {
+                    focus_node = null;
+                    if (highlight_trans < 1) {
+                        node.style("opacity", 1);
+                        text.style("opacity", 1);
+                        link.style("opacity", 1);
+                    }
+                }
+                if (highlight_node === null) exit_highlight();
+            })
+
+        // mouse down on one of circles
         function set_focus(d) {
-            if (highlight_trans <1){
+            if (highlight_trans < 1) {
+                node.style("opacity", function (o) {
+                    return isConnected(d, o) ? 1 : 2 * highlight_trans;
+                });
+                text.style("opacity", function (o) {
+                    return isConnected(d, o) ? 1 : highlight_trans;
+                });
+                link.style("opacity", function (o) {
+                    return o.source.index == d.index || o.target.index == d.index ? 1 : highlight_trans;
+                });
+            }
+        }
 
+        function set_highlight(d) {
+            if (focus_node !== null) d = focus_node;
+            highlight_node = d;
+
+            if (highlight_color != "white") {
+                text.style("font-weight", function (o) {
+                    return isConnected(d, o) ? "bold" : "normal";
+                });
+                link.style("stroke", function (o) {
+                    return o.source.index == d.index || o.target.index == d.index ?
+                        highlight_color : default_link_color;
+                });
+            }
+        }
+
+        function exit_highlight() {
+            highlight_node = null;
+            if (focus_node === null) {
+                if (highlight_color != "white") {
+                    text.style("font-weight", "normal");
+                    link.style("stroke", default_link_color);
+                }
             }
         }
 
         //实现svg zoom缩放
-        zoom.on("zoom",function () {
-            g.attr("transform","translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+        zoom.on("zoom", function () {
+            g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
         });
-        svg.call(zoom).on('dblclick.zoom',null); //取消鼠标双击放大的效果
+        svg.call(zoom).on('dblclick.zoom', null); //取消鼠标双击放大的效果
 
 
         //适应屏幕尺寸
         resize();
-        d3.select(window).on("resize",resize);
+        d3.select(window).on("resize", resize);
         function resize() {
             var width = window.innerWidth, height = window.innerHeight;
-            svg.attr("width",width).attr("height",height);
-            force.size([force.size()[0]+(width-w)/zoom.scale(),force.size()[1]+(height-h)/zoom.scale()]).resume();
+            svg.attr("width", width).attr("height", height);
+            force.size([force.size()[0] + (width - w) / zoom.scale(), force.size()[1] + (height - h) / zoom.scale()]).resume();
             w = width;
             h = height;
         }
@@ -256,6 +364,21 @@
             .transition()
             .duration(5000)
             .style("opacity", 1);
+
+        //侧边栏展示调用和被调用方法
+        $.getJSON("/server/getInvocations/" + selectedVal, function (chosenNode) {
+            //clear previous notes
+            notes.selectAll('*').remove();
+
+            //该服务调用其他服务的方法
+            var listSon = notes.append('ul');
+            listSon.append('li')
+                .text("调用：\n" + chosenNode.sonInvocations + "\n");
+            //该服务被其他服务调用的方法
+            var listFather = notes.append('ul');
+            listFather.append('li')
+                .text("被调用：\n" + chosenNode.fatherInvocations);
+        });
     }
 </script>
 </body>
